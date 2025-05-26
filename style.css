@@ -12,6 +12,13 @@
     background-color: #55A455;
 }
 
+.banner1{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
 
 
 
