@@ -45,7 +45,7 @@
 
 
 
-.footer {
+.rodape {
     background-color: #173215;
     color: white;
     text-align: center;
@@ -73,11 +73,7 @@
         align-items: center;
     }
 
-    .coluna,
-    .texto-central {
-        width: 90%;
-        margin-bottom: 40px;
-    }
+    
 
     .instagram-icon {
         width: 20px;
