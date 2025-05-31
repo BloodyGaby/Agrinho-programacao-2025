@@ -28,9 +28,9 @@ body{
 .quadrado1{
    width: 200px;           
   height: 200px;         
-  background-color: #3498db; 
+  background-color: #A0CCA0; 
   color: white;            
-  border: 2px solid black; 
+  border: 2px solid: #1D2D1C; 
   display: flex;          
   align-items: center;     
   justify-content: center; 
@@ -39,14 +39,16 @@ body{
 
 }
 .patos{
-  position: absolute;
-  top: 1000px; 
-  right: 20px;
-  width: 350px;
-    object-fit: cover;
-  border: 3px solid #333; 
-  border-radius: 8px;     
-  box-shadow: 0 0 8px rgba(0,0,0,0.3); 
+  width: 200px;            /* Largura */
+  height: 200px;           
+  background-color: #3498db; /* Cor de fundo */
+  color: white;            /* Cor do texto */
+  border: 2px solid #173215; /* Borda preta de 2px */
+  display: flex;           /* Para centralizar o texto */
+  align-items: center;     /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  font-weight: bold;       /* Texto em negrito */
+  border-radius: 8px;      /* Cantos arredondados (opcional) */
 }
 .Alface{
     width:80px;
