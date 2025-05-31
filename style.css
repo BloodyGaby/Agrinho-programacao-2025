@@ -34,7 +34,7 @@ body{
 }
 .patos{
   position: absolute;
-  top: 900px; 
+  top: 1000px; 
   right: 20px;
   width: 350px;
     object-fit: cover;
