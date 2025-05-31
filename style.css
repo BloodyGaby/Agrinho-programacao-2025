@@ -31,11 +31,11 @@
 
 }
 .patos{
-   position: absolute;
-  top: 80%;               
-  right: 20px;           
-  transform: translateY(-50%);
-  width: 300px;           
+  position: absolute;
+  top: 220px; 
+  right: 20px;
+  width: 150px;
+      
   border: 3px solid #333; 
   border-radius: 8px;     
   box-shadow: 0 0 8px rgba(0,0,0,0.3); 
