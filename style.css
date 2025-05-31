@@ -30,7 +30,7 @@ body{
   height: 200px;         
   background-color: #A0CCA0; 
   color: white;            
-  border: 2px solid: #1D2D1C; 
+  border: 2px; solid: #1D2D1C; 
   display: flex;          
   align-items: center;     
   justify-content: center; 
@@ -39,16 +39,16 @@ body{
 
 }
 .patos{
-  width: 200px;            /* Largura */
+  width: 200px;           
   height: 200px;           
-  background-color: #3498db; /* Cor de fundo */
-  color: white;            /* Cor do texto */
-  border: 2px solid #173215; /* Borda preta de 2px */
-  display: flex;           /* Para centralizar o texto */
-  align-items: center;     /* Alinha verticalmente */
-  justify-content: center; /* Alinha horizontalmente */
-  font-weight: bold;       /* Texto em negrito */
-  border-radius: 8px;      /* Cantos arredondados (opcional) */
+  background-color: #3498db; 
+  color: white;            
+  border: 2px solid #173215; 
+  display: flex;           
+  align-items: center;     
+  justify-content: center; 
+  font-weight: bold;       
+  border-radius: 8px;      
 }
 .Alface{
     width:80px;
