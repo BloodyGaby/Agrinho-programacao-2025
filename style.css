@@ -11,14 +11,13 @@
 }
 
 .banner1{
-       width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px;
-    justify-content: center;
-    margin-top:auto
-    margin-bottom:800px;
+ width: 100%;
+max-height: 300px;
+object-fit: cover;
+display: block;
+border-radius: 10px;
+margin-top: auto;
+margin-bottom: 800px;
 
 }
 .quadrado{
