@@ -39,6 +39,7 @@ body{
 
 }
 .patos{
+    top:600px;
   width: 200px;           
   height: 200px;           
   background-color: #3498db; 
