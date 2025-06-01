@@ -33,6 +33,16 @@ body{
 }
 
 
+.quadrado1{
+  width: 200px;
+  height: 200px;
+  background-color: #A0CCA0;
+  border:5px;
+  border-color: #1D2D1C;
+  font-size: 10px;
+  color:#000000;
+
+}
 .patos{
     position:relative;
     top:100px;
