@@ -2,64 +2,37 @@ body{
     background-color: #55A455;
 }
 
-.retangulo{
-    width: 100%;
-    height: 200px;
-    background-color:#173215;
-    color:white;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin-bottom: 300px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.retangulo {
+  background-color: #1e3b1f; 
+  color: white;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .banner1 {
   width: 100%;
   text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
 .banner1 img {
-  width: 100%; 
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0;
 }
 
 .banner1 .descricao {
   padding: 10px 0;
   font-size: 16px;
   color: black;
-  margin: 0;
 }
 
 
-.quadrado1{
-   width: 500px;           
-  height: 500px;         
-  background-color: #A0CCA0; 
-  color: rgb(0, 0, 0);            
-  border: 10px #1D2D1C; 
-  display: flex;          
-  align-items: center;     
-  justify-content: center; 
-  font-weight: bold;      
-  border-radius: 8px; 
-  font-size: 30px;   
-  
-    .descricao{
-    background-color: #6dbf72; 
-  text-align: center;
-  font-size: 16px;
-  color: black;
-  padding: 10px;
-
-
-}
-
-}
 .patos{
     position:relative;
     top:100px;
