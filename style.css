@@ -16,14 +16,13 @@ body{
 
 .banner1 {
   width: 100%;
-  background-color: #6dbf72; /* faixa verde */
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
 .banner1 img {
-  width: 100%; /* ocupa toda a faixa */
+  width: 100%; 
   height: auto;
   display: block;
   margin: 0;
