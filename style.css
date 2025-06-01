@@ -51,8 +51,11 @@ body{
   margin-right: 40px; 
   border: 2px solid black;
   margin-top:-600px;
-
-
+}
+.patos .descricao1{
+    padding: 10px 0;
+  font-size: 16px;
+  color: black;
 
 }
 
