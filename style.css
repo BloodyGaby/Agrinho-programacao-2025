@@ -99,6 +99,17 @@ body{
 
 }
 
+/*Campo e cidade*/
+
+.campoCidadeTitulo1{
+    width: 100px;
+    height:50px;
+    background-color:#A0CCA0 ;
+    font-size: 10px;
+    color:#000000;
+}
+
+
 
 
 
