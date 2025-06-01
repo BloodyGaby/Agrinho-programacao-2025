@@ -104,15 +104,21 @@ body{
 .campoCidadeTitulo1{
     display:block;
     margin-left: auto;
-  margin-right: 40px; 
-  border: 2px solid black;
+    margin-right: 40px; 
+    border: 2px solid black;
     width: 500px;
     height:50px;
     background-color:#A0CCA0 ;
     font-size: 10px;
     color:#000000;
 }
-
+.texto2Campo{
+    width: 400px;
+    height: 400px;
+    background-color: #A0CCA0;
+    font-size: 10px;
+    color:black
+}
 
 
 
