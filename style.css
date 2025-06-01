@@ -37,14 +37,13 @@ body{
   width: 500px;
   height: 500px;
   background-color: #A0CCA0;
-  border:5px;
-  border-color: #1D2D1C;
+ border: 2px solid rgb(2, 26, 11);
   font-size: 30px;
   color:#000000;
 
 }
 .patos{
-    text-align: left;
+    text-align: right;
     margin:20px;
     height: 100px;
     width: 100px;
