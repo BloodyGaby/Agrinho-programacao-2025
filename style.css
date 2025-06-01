@@ -22,7 +22,7 @@ body{
     align-items:center;
     justify-content: center;
     margin-top:block;
-     margin-bottom: 700px;
+     margin-bottom: 500px;
 
 }
 .quadrado1{
@@ -41,11 +41,11 @@ body{
 }
 .patos{
     position:relative;
-    top:60px;
- width:80px;
+    top:100px;
+ width:100px;
     height: auto;
-    margin-left:40px;
-    margin-right: auto;
+    margin-left:auto;
+    margin-right: 100px;
 
 }
 .Alface{
