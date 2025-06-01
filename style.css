@@ -39,10 +39,11 @@ body{
   font-size: 30px;   
   
     .descricao{
-    font-size: 10px;
-    margin-top: 8px;
-    color:black;
-    
+    background-color: #6dbf72; 
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  padding: 10px;
 
 
 }
