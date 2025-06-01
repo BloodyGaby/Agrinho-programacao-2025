@@ -34,12 +34,12 @@ body{
 
 
 .quadrado1{
-  width: 200px;
-  height: 200px;
+  width: 800px;
+  height: 800px;
   background-color: #A0CCA0;
   border:5px;
   border-color: #1D2D1C;
-  font-size: 10px;
+  font-size: 30px;
   color:#000000;
 
 }
