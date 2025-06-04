@@ -47,6 +47,8 @@ body{
 
 }
 .patos {
+  margin-left: auto;
+  margin-right: 30px;
   display: flex;
   width: 400px;
   height: 400px;
