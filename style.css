@@ -22,7 +22,7 @@ body{
 
 .banner1 img {
   width: 100%;
-  height: auto;
+  height: 80%;
   display: block;
 }
 
@@ -34,8 +34,8 @@ body{
 
 
 .quadrado1{
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 800px;
   background-color: #A0CCA0;
  border: 2px solid rgb(2, 26, 11);
   font-size: 30px;
