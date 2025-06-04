@@ -34,7 +34,7 @@ body{
 
 
 .quadrado1{
-  padding:20px;
+  padding:30px;
   width: 800px;
   height: 600px;
   background-color: #A0CCA0;
@@ -56,9 +56,13 @@ body{
   margin-top:-600px;
   margin-bottom:300px;
 }
-
-
-
+.descricao .patos {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+  }
 
 .Alface{
    display: block;
