@@ -109,11 +109,12 @@ body{
 /* Agricultura*/
 .AgriculturaTitulo{
   width: 400px;
-  height: 400px;
+  font-size: 20px;
+  height: 200px;
   background-color: #A0CCA0;
   color:#ffffffff;
-  margin-left: auto;
-  margin-right: 40px;
+  margin-left: 40px;
+  margin-right: auto;
   border: 2px solid black;
   margin-top: 100px;
   margin-bottom: 200px;
@@ -124,17 +125,18 @@ body{
 .Textoagricultura{
   width: 400px;
   height: 400px;
+  font-size: 20px;
   background-color: #A0CCA0;
   color:#ffffffff;
-  margin-left: auto;
-  margin-right: 40px;
+  margin-left: 40px;
+  margin-right: auto;
   border: 2px solid black;
   justify-content: center;  
   align-items: center;      
-  text-align: center
-   
+  text-align: center;
+}
+.TituloAgriculturaBrasileira{
   
-
 }
 
 
