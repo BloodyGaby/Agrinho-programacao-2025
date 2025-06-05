@@ -22,3 +22,7 @@ document.getElementById('alterna-contraste').addEventListener('click', function(
         document.body.style.color = '#ffffff';
     }
 });
+
+document.querySelector('.instagram:hover').addEventListener('click', function () {
+  window.open(this.src, '_blank');
+});
