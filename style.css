@@ -109,7 +109,7 @@ body{
   padding: 20px;
   width: 800px;
   height: 400px;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #A0CCA0;
   color:rgb(0, 0, 0);
   margin-left: 40px;
@@ -121,10 +121,12 @@ body{
   margin-bottom: 100px;
 }
 
+
+
 .TituloAgriculturaBrasileira{
   width: 400px;
   font-size: 20px;
-  height: 200px;
+  height: 100px;
   background-color: #A0CCA0;
   color:rgb(0, 0, 0);
   margin-left: 40px;
@@ -136,6 +138,37 @@ body{
   align-items: center;      
   text-align: center; 
 }
+.TextoAgriculturaBrasil{
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  font-size: 30px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;
+  margin-bottom: 100px;
+}
+.ListaAgriculturaBrasileira{
+   padding: 20px;
+  width: 800px;
+  height: 400px;
+  font-size: 30px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;
+  margin-bottom: 100px;
+}
+
 
 
 /*Campo e cidade*/
@@ -181,6 +214,8 @@ margin-bottom:50px;
   background-size: cover;
   background-position: center;
 }
+
+
 
 /*desafios e soluções sustentaveis*/
 .texto7{
