@@ -36,7 +36,7 @@ body{
 .quadrado1{
   padding:30px;
   width: 800px;
-  height: 400px;
+  height: 600px;
   background-color: #A0CCA0;
  border: 2px solid rgb(2, 26, 11);
   font-size: 30px;
@@ -56,15 +56,16 @@ body{
   margin-bottom:300px; 
   border: 2px solid black;
 }
-.descricao1{
-    margin-left: auto;
-  margin-right: 30px;
-  display: flex;
-  color: #ffffff;
-   margin-top:-590px;
-  margin-bottom:100px; 
-  border: 2px solid black;
-}
+.descricao .patos{
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #000000;
+     margin-top:-500px;
+  margin-bottom:300px;
+  
+  }
 
 .Alface{
    display: block;
@@ -76,17 +77,6 @@ body{
   margin-top:-300px;
   margin-bottom:300px;
 }
-.descricao2{
-  color:#ffffff;
-  margin-left: auto;
-  margin-right: 30px;
-  display: flex;
-  width: 400px;
-  height: 400px;
-   margin-top:-290px;
-  margin-bottom:300px; 
-}
-
 
 
 
