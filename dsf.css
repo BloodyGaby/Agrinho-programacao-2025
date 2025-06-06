@@ -1,0 +1,83 @@
+.texto7{
+  margin-top: 30px;
+  border: 2px solid black;
+  background-color: #A0CCA0;
+  width: 900px;
+  height: 450px;
+  font-size: 35px;
+  color:#000000;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+  
+}
+.topicosdsf{
+  width: 600px;
+  height: 100px;
+  color:#000000;
+  background-color: #A0CCA0;
+  font-size: 20px;
+  display:flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right:auto ;
+  border: 2px solid black;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+}
+
+.Listadsf{
+  width: 700px;
+  height: 200px;
+  color:#000000;
+  background-color: #A0CCA0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right:auto ;
+  display: flex;
+  border: 2px solid black;
+   font-size: 15px;
+  color:#000000;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+}
+
+.solucoes{
+  width: 400px;
+  height: 200px;
+  background-color: #A0CCA0;
+  border: 2px solid black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  font-size: 20px;
+  color:#000000;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+}
+
+.solucoeslista{
+  width: 1000px;
+  height: 300px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: flex;
+   font-size: 20px;
+  color:#000000;
+  background-color: #A0CCA0;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+}
+

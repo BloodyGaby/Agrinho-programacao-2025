@@ -1,0 +1,94 @@
+.AgriculturaTitulo{
+  width: 600px;
+  font-size: 30px;
+  height: 150px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+  padding:20px;
+}
+.Textoagricultura{
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  font-size: 30px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+.TituloAgriculturaBrasileira{
+  width: 400px;
+  font-size: 20px;
+  height: 100px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+}
+.TextoAgriculturaBrasil{
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  font-size: 30px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;
+  margin-bottom: 50px;
+}
+.ListaAgriculturaBrasileira{
+  padding-left: 20px;
+  padding-right: 20px;
+   padding: 20px;
+  width: 800px;
+  height: 400px;
+  font-size: 30px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  margin-bottom: 50px;
+}
+.TituloAgriculturaParana{
+  width: 400px;
+  font-size: 20px;
+  height: 100px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: auto;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
+}
+

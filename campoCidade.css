@@ -1,0 +1,41 @@
+.campoCidadeTitulo1 {
+margin-bottom:50px;
+  display: block;
+  margin-left: auto;
+  margin-right: 40px;
+  border: 2px solid black;
+  width: 510px;
+  height: 120px;
+  background-color: #A0CCA0;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  line-height: 50px; 
+}
+
+.textoCampo {
+  margin-left:auto;
+  margin-right: 40px;
+  display: block;
+  width: 400px;
+  height: 400px;
+  background-color: #A0CCA0;
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+  margin: 20px 40px;
+  border: 2px solid black;
+}
+
+.paisagem3 {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: 40px;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+}
