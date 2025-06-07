@@ -40,7 +40,6 @@ margin-bottom:50px;
 }
 
 .Paisagem3 {
- .imagem-com-descricao img {
   width: 250px;                   
   height: 160px;                   
   object-fit: cover;               
@@ -119,4 +118,4 @@ margin-bottom:50px;
   text-align: center; 
 
 }
- }
+ 
