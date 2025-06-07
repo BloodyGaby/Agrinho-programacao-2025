@@ -40,15 +40,13 @@ margin-bottom:50px;
 }
 
 .Paisagem3 {
-  top:-300px;
-   margin-left: 30px;
-  margin-right: auto;
-  display: flex;
-  width: 500px;
-  height: 400px;
-  margin-bottom:100px; 
-  border: 2px solid black;
-}
+ .imagem-com-descricao img {
+  width: 250px;                   
+  height: 160px;                   
+  object-fit: cover;               
+  border-radius: 8px;             
+  display: flex;                  
+  margin: 0 auto;     
 .trator{
   margin-left: 30px;
   margin-right: auto;
