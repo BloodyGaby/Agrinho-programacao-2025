@@ -4,7 +4,7 @@
     height: 500px;
     object-fit: cover;
     border-radius: 10px;
-    display: block;
+    display: flex;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -31,21 +31,22 @@ margin-bottom:50px;
   margin-right: 40px;
   border: 2px solid black;
   width: 510px;
-  height: 300px;
+  height: 400px;
   background-color: #A0CCA0;
-  font-size: 20px;
+  font-size: 25px;
   color: #000000;
   text-align: center;
   line-height: 50px; 
 }
 
 .Paisagem3 {
+  top:-300px;
    margin-left: 30px;
   margin-right: auto;
   display: flex;
-  width: 400px;
+  width: 500px;
   height: 400px;
-  margin-bottom:300px; 
+  margin-bottom:100px; 
   border: 2px solid black;
 }
 .trator{
@@ -54,7 +55,7 @@ margin-bottom:50px;
   display: flex;
   width: 400px;
   height: 400px;
-  margin-bottom:300px; 
+  margin-bottom:100px; 
   border: 2px solid black;
 }
 
@@ -116,5 +117,5 @@ margin-bottom:50px;
   justify-content: center;  
   align-items: center;      
   text-align: center; 
-  
+
 }
