@@ -9,19 +9,28 @@
 }
 
 
-.campoCidadeTitulo1 {
-margin-bottom:50px;
+.caixa-texto {
   display: block;
-  margin-left: auto;
-  margin-right: 40px;
+  margin: 0 auto 50px auto;
   border: 2px solid black;
   width: 510px;
-  height: 120px;
   background-color: #A0CCA0;
-  font-size: 20px;
+  padding: 20px;
   color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.caixa-texto p {
   text-align: center;
-  line-height: 50px; 
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.caixa-texto .fonte {
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: italic;
 }
 
 .textoCampo {
