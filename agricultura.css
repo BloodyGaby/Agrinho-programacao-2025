@@ -38,7 +38,7 @@
   height: 100px;
   background-color: #A0CCA0;
   color:rgb(0, 0, 0);
-  margin-left: 40px;
+  margin-left: 60px;
   margin-right: auto;
   border: 2px solid black;
   margin-top: 100px;
@@ -77,7 +77,7 @@
   justify-content: center;  
   align-items: center;      
   text-align: center; 
-  top:-600px;
+  top:-400px;
 }
 
 .TextoAgriculturaParanaense{
