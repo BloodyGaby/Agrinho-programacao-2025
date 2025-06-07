@@ -45,7 +45,7 @@ margin-bottom:50px;
  display: flex;
   width: 500px;
   height: 500px;
-   margin-top:-500px;
+   margin-top:-300px;
   border: 2px solid black;
   
  }
@@ -109,7 +109,7 @@ margin-bottom:50px;
   color:rgb(0, 0, 0);
   border: 2px solid black;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 300px;
   justify-content: center;  
   align-items: center;      
   text-align: center; 
@@ -128,7 +128,7 @@ margin-bottom:50px;
   justify-content: center;  
   align-items: center;      
   text-align: center; 
-  margin-top:-700px;
+  margin-top:-650px;
 }
 .texto1rural{
     margin-right: 50px;
@@ -138,11 +138,11 @@ margin-bottom:50px;
   background-color: #A0CCA0;
   color:rgb(0, 0, 0);
   border: 2px solid black;
-  margin-bottom: 20px;
+  margin-bottom: 400px;
   justify-content: center;  
   align-items: center;      
   text-align: center; 
   font-size: 20px;
-margin-top: -600;
+margin-top: -550;
 }
  
