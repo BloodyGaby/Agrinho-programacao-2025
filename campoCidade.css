@@ -9,43 +9,34 @@
 }
 
 
-.caixa-texto {
+.campoCidadeTitulo1 {
+margin-bottom:50px;
   display: block;
-  margin: 0 auto 50px auto;
-  border: 2px solid black;
-  width: 510px;
-  background-color: #A0CCA0;
-  padding: 20px;
-  color: #000000;
-  font-family: Arial, sans-serif;
-}
-
-.caixa-texto p {
-  text-align: center;
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.caixa-texto .fonte {
-  margin-top: 20px;
-  font-size: 16px;
-  font-style: italic;
-}
-
-.textoCampo {
- margin-bottom:50px;
-  display: flex;
   margin-left: auto;
   margin-right: 40px;
   border: 2px solid black;
   width: 510px;
-  height: 500px;
+  height: 120px;
   background-color: #A0CCA0;
-  font-size: 30px;
+  font-size: 20px;
   color: #000000;
   text-align: center;
   line-height: 50px; 
+}
+
+.textoCampo {
+  margin-left: auto;
+  margin-right: 40px;
+  padding:30px;
+  width: 600px;
+  height: 600px;
+  background-color: #A0CCA0;
+ border: 2px solid rgb(2, 26, 11);
+  font-size: 30px;
+  color:#000000;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
 }
 
 .Paisagem3 {
