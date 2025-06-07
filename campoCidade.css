@@ -70,7 +70,7 @@ margin-bottom:50px;
 .descricao2{
   font-size: 20px;
   margin-top:10px;
-  margin-bottom:50px; 
+  margin-bottom:100px; 
   margin-left: 50px;
   margin-right: auto;
 }
@@ -136,7 +136,7 @@ margin-bottom:50px;
   justify-content: center;  
   align-items: center;      
   text-align: center; 
-  margin-top:-1000px;
+  margin-top:-950px;
 }
 .texto1rural{
     margin-right: 50px;
