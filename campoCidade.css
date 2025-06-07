@@ -26,12 +26,12 @@ margin-bottom:50px;
 
 .textoCampo {
  margin-bottom:50px;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: 40px;
   border: 2px solid black;
   width: 510px;
-  height: 120px;
+  height: 300px;
   background-color: #A0CCA0;
   font-size: 20px;
   color: #000000;
@@ -47,4 +47,29 @@ margin-bottom:50px;
   height: 400px;
   margin-bottom:300px; 
   border: 2px solid black;
+}
+.trator{
+  margin-left: 30px;
+  margin-right: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin-bottom:300px; 
+  border: 2px solid black;
+}
+
+.ajudaTexto{
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  font-size: 20px;
+  height: 100px;
+  background-color: #A0CCA0;
+  color:rgb(0, 0, 0);
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center; 
 }
