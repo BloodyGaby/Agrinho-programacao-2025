@@ -149,5 +149,10 @@
 }
 
 .descricao{
+  width: 500px;
+  height: 50px;
+  background-color: #A0CCA0;
+  border: 2px solid black;
     font-size: 15px;
+    margin-bottom: 20px;
 }
