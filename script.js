@@ -1,3 +1,8 @@
+
+
+
+
+
 document.getElementById('botao-acessibilidade').addEventListener('click', function() {
     const opcoes = document.getElementById('opcoes-acessibilidade');
     const expanded = opcoes.style.display === 'block';

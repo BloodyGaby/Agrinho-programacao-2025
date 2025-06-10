@@ -1,4 +1,3 @@
-
 const retangulo = document.querySelector(".retangulo");
 const banner1 = document.querySelector(".banner1");
 
