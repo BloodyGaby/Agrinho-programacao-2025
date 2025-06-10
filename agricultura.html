@@ -105,7 +105,16 @@ Pode ser praticada por agricultores pequenos, com pouco espaço, para consumo pr
     </a>
 <script src="script.js"></script>
 <script src="js/logic.js"></script> 
- <script src="https://vlibras.gov.br/app/vlibras-widget.js"></script>
-    <script src="vlibras-init.js"></script>
+<div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 </html>
