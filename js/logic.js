@@ -1,23 +1,25 @@
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-var prevScrollpos = window.scrollY;
- 
-/* Get the header element and it's position */
-var headerDiv = document.querySelector("header");
-var headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
- 
-window.onscroll = function() {
- var currentScrollPos = window.scrollY;
- 
- /* if we're scrolling up, or we haven't passed the header,
-    show the header at the top */
- if (prevScrollpos > currentScrollPos  || currentScrollPos < headerBottom){  
-     headerDiv.style.top = "0";
- }
- else{
-     /* otherwise we're scrolling down & have passed the header so hide it */
-     headerDiv.style.top = "-7.2rem";
- } 
- 
- prevScrollpos = currentScrollPos;
-}
- 
+window.addEventListener("DOMContentLoaded", () => {
+  const retangulo = document.querySelector(".retangulo");
+  const banner1 = document.querySelector(".banner1");
+
+  // Altura combinada do retângulo + banner
+  const bannerEnd = banner1.offsetTop + banner1.offsetHeight;
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    // Começa a fadear só depois que passar do fim do banner
+    if (scrollY < bannerEnd) {
+      retangulo.style.opacity = 1;
+      banner1.style.opacity = 1;
+    } else {
+      const fadeStart = bannerEnd;         // ponto onde começa o fade
+      const fadeRange = 200;               // distância em que o fade acontece
+      const fadeProgress = Math.min((scrollY - fadeStart) / fadeRange, 1);
+      const opacity = 1 - fadeProgress;
+
+      retangulo.style.opacity = opacity;
+      banner1.style.opacity = opacity;
+    }
+  });
+});
