@@ -80,14 +80,15 @@ Os prêmios são entregues de acordo com o ano escolar (que pode variar entre o 
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-   <div class="acessibilidade">
-    <button id="btnAcessibilidade">Acessibilidade</button>
-    <div id="painelAcessibilidade" class="painel escondido">
-      <button onclick="aumentarFonte()">A+</button>
-      <button onclick="diminuirFonte()">A-</button>
-      <button onclick="lerTexto()">Ler texto</button>
-    </div>
+<div class="acessibilidade-container">
+  <button class="acessibilidade-botao" id="abrir-acessibilidade">Acessibilidade</button>
+  <div class="acessibilidade-opcoes" id="acessibilidade-opcoes">
+    <button onclick="aumentarFonte()">A+</button>
+    <button onclick="diminuirFonte()">A-</button>
+    <button onclick="lerTexto()">Ler texto</button>
   </div>
+</div>
+
     <script src="acessibilidade.js"></script>
     <script src="script.js"></script>
 
