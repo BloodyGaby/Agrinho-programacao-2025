@@ -5,8 +5,9 @@
  border: 2px solid rgb(2, 26, 11);
   font-size: 30px;
   color:#000000;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-top: 100px;
+  padding:20px;
   justify-content: center;  
   align-items: center;      
   text-align: center; 
@@ -17,6 +18,53 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 200px;
+    padding:30px;
+    background-color: #A0CCA0;
+    border: 2px solid rgb(2, 26, 11);
+    font-size: 30px;
+     color:#000000;
+     justify-content: center;  
+    align-items: center;      
+    text-align: center; 
+}
+
+.redacao1{
+      width: 1000px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    padding:30px;
+    background-color: #A0CCA0;
+    border: 2px solid rgb(2, 26, 11);
+    font-size: 30px;
+     color:#000000;
+     justify-content: center;  
+    align-items: center;      
+    text-align: center; 
+}
+.redacao2{
+      width: 1000px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    padding:30px;
+    background-color: #A0CCA0;
+    border: 2px solid rgb(2, 26, 11);
+    font-size: 30px;
+     color:#000000;
+     justify-content: center;  
+    align-items: center;      
+    text-align: center; 
+}
+.redacao3{
+      width: 1000px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    padding:30px;
     background-color: #A0CCA0;
     border: 2px solid rgb(2, 26, 11);
     font-size: 30px;
