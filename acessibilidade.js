@@ -1,43 +1,36 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.getElementById("acessibilidade-toggle");
-  const opcoes = document.getElementById("acessibilidade-opcoes");
-  const aumentarFonteBtn = document.getElementById("aumentar-fonte");
-  const diminuirFonteBtn = document.getElementById("diminuir-fonte");
-  const lerPaginaBtn = document.getElementById("ler-pagina");
+const painel = document.getElementById('painelAcessibilidade');
+const btnToggle = document.getElementById('btnAcessibilidade');
+let tamanhoFonte = 100; // percentual base: 100%
 
-  let fontSizeAtual = 16;
-
-  toggleBtn.addEventListener("click", () => {
-    const isHidden = opcoes.classList.toggle("escondido");
-    toggleBtn.setAttribute("aria-expanded", !isHidden);
-    opcoes.setAttribute("aria-hidden", isHidden);
-  });
-
-  aumentarFonteBtn.addEventListener("click", () => {
-    if (fontSizeAtual < 24) {
-      fontSizeAtual += 2;
-      document.body.style.fontSize = fontSizeAtual + "px";
-    }
-  });
-
-  diminuirFonteBtn.addEventListener("click", () => {
-    if (fontSizeAtual > 12) {
-      fontSizeAtual -= 2;
-      document.body.style.fontSize = fontSizeAtual + "px";
-    }
-  });
-
-  lerPaginaBtn.addEventListener("click", () => {
-    const texto = document.body.innerText;
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(texto);
-      utterance.lang = "pt-BR";
-      utterance.rate = 1;
-      utterance.pitch = 1;
-      window.speechSynthesis.speak(utterance);
-    } else {
-      alert("Este navegador não suporta leitura de texto.");
-    }
-  });
+// Mostra/esconde o painel
+btnToggle.addEventListener('click', () => {
+  painel.classList.toggle('escondido');
 });
+
+// Aumenta a fonte de toda a página
+function aumentarFonte() {
+  if (tamanhoFonte < 200) {
+    tamanhoFonte += 10;
+    document.body.style.fontSize = `${tamanhoFonte}%`;
+  }
+}
+
+// Diminui a fonte de toda a página
+function diminuirFonte() {
+  if (tamanhoFonte > 60) {
+    tamanhoFonte -= 10;
+    document.body.style.fontSize = `${tamanhoFonte}%`;
+  }
+}
+
+// Lê o texto da página
+function lerTexto() {
+  const texto = document.body.innerText;
+  const utterance = new SpeechSynthesisUtterance(texto);
+  utterance.lang = "pt-BR";
+  utterance.rate = 1;
+  utterance.pitch = 1.2;
+  const vozes = window.speechSynthesis.getVoices();
+  utterance.voice = vozes.find(v => v.lang === 'pt-BR') || null;
+  window.speechSynthesis.speak(utterance);
+}

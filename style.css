@@ -43,47 +43,63 @@ body {
   background-color: white;
 }
 
-.acessibilidade-widget {
+.acessibilidade {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  font-family: Arial, sans-serif;
+  top: 40%;
+  right: 0;
+  z-index: 1000;
 }
 
-#acessibilidade-toggle {
-  background-color: #0078d7;
-  color: white;
+#acessibilidade button,
+.painel button {
+  font-size: 14px;
+  margin: 5px 0;
   border: none;
-  border-radius: 8px;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
+  padding: 8px 12px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-#acessibilidade-opcoes {
-  margin-top: 10px;
+#btnAcessibilidade {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background-color: #1e3b1f;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border-radius: 8px 0 0 8px;
+}
+
+#btnAcessibilidade:hover {
+  background-color: #162c16;
+}
+
+.painel {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  margin-top: 10px;
+  box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-#acessibilidade-opcoes button {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 16px;
+.painel button {
+  background-color: white;
+}
+
+.painel button:hover {
+  background-color: #d5e5d5;
+}
+
+.painel button:active {
+  background-color: #a8d0a8;
 }
 
 .escondido {
   display: none;
 }
-
 
 .botao-quadrado {
   display: inline-flex;
