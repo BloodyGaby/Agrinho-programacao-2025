@@ -43,60 +43,58 @@ body {
   background-color: white;
 }
 
+/* Botão de acessibilidade fixo */
 .acessibilidade-container {
   position: fixed;
-  top: 100px;
+  top: 50%;
   right: 0;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  transform: translateY(-50%);
+  z-index: 1000;
 }
-
-.acessibilidade-botao {
+#acessibilidade-btn {
+  background-color: #1f3d1f; /* Verde escuro */
+  color: white;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  background-color: #1e3b1f; /* verde escuro */
-  color: white;
-  padding: 10px 5px;
   border: none;
-  border-radius: 8px 0 0 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.acessibilidade-botao:hover {
-  background-color: #163017; /* verde mais escuro */
-}
-
-.acessibilidade-opcoes {
-  display: none;
-  background-color: #f9f9f9;
   padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin-top: 10px;
-  width: 120px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+}
+#acessibilidade-btn:hover {
+  background-color: #163116; /* Tom mais escuro */
 }
 
-.acessibilidade-opcoes button {
-  display: block;
-  margin: 5px 0;
-  width: 100%;
-  padding: 8px;
-  border: none;
+#acessibilidade-opcoes {
+  position: absolute;
+  top: 0;
+  left: -120px;
   background-color: white;
-  color: black;
-  border-radius: 6px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#acessibilidade-opcoes button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  border-radius: 5px;
   font-weight: bold;
 }
-
-.acessibilidade-opcoes button:hover {
-  background-color: #a6c8a0; /* verde médio ao tocar */
+#acessibilidade-opcoes button:hover {
+  background-color: #a8d5a8; /* Verde médio */
 }
+
+.hidden {
+  display: none;
+}
+
 
 .botao-quadrado {
   display: inline-flex;

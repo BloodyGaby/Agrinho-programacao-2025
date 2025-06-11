@@ -1,40 +1,30 @@
-// Toggle visibilidade do menu
-document.getElementById("abrir-acessibilidade").addEventListener("click", () => {
-  const opcoes = document.getElementById("acessibilidade-opcoes");
-  opcoes.style.display = opcoes.style.display === "block" ? "none" : "block";
+let tamanhoFonte = 100;
+const opcoes = document.getElementById("acessibilidade-opcoes");
+document.getElementById("acessibilidade-btn").addEventListener("click", () => {
+  opcoes.classList.toggle("hidden");
 });
 
-// Controle de fonte
-let tamanhoFonteAtual = 1; // em rem
-
-function aumentarFonte() {
-  tamanhoFonteAtual += 0.1;
-  document.body.style.fontSize = `${tamanhoFonteAtual}rem`;
+function alterarFonte(variacao) {
+  tamanhoFonte += variacao * 10;
+  if (tamanhoFonte < 50) tamanhoFonte = 50;
+  if (tamanhoFonte > 200) tamanhoFonte = 200;
+  document.body.style.fontSize = `${tamanhoFonte}%`;
 }
 
-function diminuirFonte() {
-  tamanhoFonteAtual = Math.max(0.6, tamanhoFonteAtual - 0.1);
-  document.body.style.fontSize = `${tamanhoFonteAtual}rem`;
-}
-
-// Leitura de texto (exclui botões)
 function lerTexto() {
-  const synth = window.speechSynthesis;
-  synth.cancel(); // Para leitura anterior se houver
+  const texto = document.body.innerText;
+  const utterance = new SpeechSynthesisUtterance(texto);
+  utterance.lang = "pt-BR";
 
-  const cloneBody = document.body.cloneNode(true);
-  const acessibilidade = cloneBody.querySelector(".acessibilidade-container");
-  if (acessibilidade) acessibilidade.remove();
+  // Seleciona voz feminina brasileira se disponível
+  const vozes = speechSynthesis.getVoices();
+  const vozFeminina = vozes.find(v => v.lang === "pt-BR" && v.name.toLowerCase().includes("feminina"));
+  if (vozFeminina) utterance.voice = vozFeminina;
 
-  const texto = cloneBody.innerText;
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance);
 
-  const utter = new SpeechSynthesisUtterance(texto);
-  utter.lang = 'pt-BR';
-  utter.rate = 0.9;
-
-  utter.onend = () => {
-    console.log("Leitura finalizada.");
+  utterance.onend = () => {
+    speechSynthesis.cancel();
   };
-
-  synth.speak(utter);
 }

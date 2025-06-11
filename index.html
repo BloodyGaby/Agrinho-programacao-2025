@@ -81,14 +81,13 @@ Os prêmios são entregues de acordo com o ano escolar (que pode variar entre o 
     </script>
 
 <div class="acessibilidade-container">
-  <button class="acessibilidade-botao" id="abrir-acessibilidade">Acessibilidade</button>
-  <div class="acessibilidade-opcoes" id="acessibilidade-opcoes">
-    <button onclick="aumentarFonte()">A+</button>
-    <button onclick="diminuirFonte()">A-</button>
-    <button onclick="lerTexto()">Ler texto</button>
+    <button id="acessibilidade-btn">Acessibilidade</button>
+    <div id="acessibilidade-opcoes" class="hidden">
+      <button onclick="alterarFonte(1)">A+</button>
+      <button onclick="alterarFonte(-1)">A-</button>
+      <button onclick="lerTexto()">Ler texto</button>
+    </div>
   </div>
-</div>
-
     <script src="acessibilidade.js"></script>
     <script src="script.js"></script>
 
