@@ -43,6 +43,43 @@ body {
   background-color: white;
 }
 
+.acessibilidade-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#acessibilidade-toggle {
+  background-color: #1e3b1f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#acessibilidade-opcoes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+#acessibilidade-opcoes button {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.escondido {
+  display: none;
+}
 
 
 .botao-quadrado {
