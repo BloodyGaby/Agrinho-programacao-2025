@@ -80,29 +80,29 @@ Os prêmios são entregues de acordo com o ano escolar (que pode variar entre o 
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
+    <div class="acessibilidade-widget" aria-label="Acessibilidade" role="region">
+  <button
+    id="acessibilidade-toggle"
+    aria-expanded="false"
+    aria-controls="acessibilidade-opcoes"
+    aria-label="Abrir opções de acessibilidade"
+  >
+    ♿
+  </button>
 
+  <div id="acessibilidade-opcoes" class="escondido" role="group" aria-hidden="true">
+    <button id="aumentar-fonte">A+</button>
+    <button id="diminuir-fonte">A-</button>
+    <button id="ler-pagina">Ler texto</button>
+  </div>
+</div>
 
-
+    <script src="acessibilidade.js"></script>
     <script src="script.js"></script>
 
     <script src="logic.js"></script>
-    <script src="acessibilidade.js"></script>
+   
     
-<div class="acessibilidade-widget" aria-label="Acessibilidade" role="region">
-    <button
-      id="acessibilidade-toggle"
-      aria-expanded="false"
-      aria-controls="acessibilidade-opcoes"
-      aria-label="Abrir opções de acessibilidade"
-    >
-      
-    </button>
-    <div id="acessibilidade-opcoes" class="escondido" role="group" aria-hidden="true">
-      <button id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
-      <button id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
-      <button id="ler-pagina" aria-label="Ler o conteúdo da página">Ler texto</button>
-    </div>
-  </div>
   </body>
 </html>
 

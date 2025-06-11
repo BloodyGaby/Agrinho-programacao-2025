@@ -43,7 +43,6 @@ body {
   background-color: white;
 }
 
-/* Widget de acessibilidade fixo no canto inferior direito */
 .acessibilidade-widget {
   position: fixed;
   bottom: 20px;
@@ -53,14 +52,15 @@ body {
 }
 
 #acessibilidade-toggle {
-  background-color: #1e3b1f;
+  background-color: #0078d7;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   width: 50px;
   height: 50px;
-  font-size: 28px;
+  font-size: 24px;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #acessibilidade-opcoes {
@@ -71,9 +71,10 @@ body {
 }
 
 #acessibilidade-opcoes button {
-  background-color: #f4f4f4;
+  background-color: #fff;
+  color: #000;
   border: 1px solid #ccc;
-  padding: 8px 14px;
+  padding: 6px 12px;
   cursor: pointer;
   border-radius: 4px;
   font-size: 16px;
@@ -82,6 +83,7 @@ body {
 .escondido {
   display: none;
 }
+
 
 .botao-quadrado {
   display: inline-flex;
