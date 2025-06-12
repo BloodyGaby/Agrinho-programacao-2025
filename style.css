@@ -43,6 +43,7 @@ body {
   background-color: white;
 }
 
+/* Container fixo do botão */
 #acessibilidade-container {
   position: fixed;
   top: 100px;
@@ -53,6 +54,7 @@ body {
   z-index: 9999;
 }
 
+/* Botão vertical lateral */
 #botao-acessibilidade {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -68,6 +70,7 @@ body {
   background-color: #062d14;
 }
 
+/* Opções que aparecem/desaparecem */
 #opcoes-acessibilidade {
   display: none;
   flex-direction: column;
@@ -75,8 +78,10 @@ body {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
 }
 
+/* Botões dentro das opções */
 #opcoes-acessibilidade button {
   margin: 5px 0;
   padding: 8px 12px;
@@ -89,6 +94,16 @@ body {
 #opcoes-acessibilidade button:hover {
   background-color: #b7d8b7;
 }
+
+/* Classe para aumentar fonte */
+.aumentar-fonte .Texto {
+  font-size: 30px !important;
+}
+
+.aumentar-fonte .descricaotexto {
+  font-size: 25px !important;
+}
+
 
 /* Mostrar/esconder opções */
 #opcoes-acessibilidade.ativo {
