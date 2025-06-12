@@ -43,58 +43,55 @@ body {
   background-color: white;
 }
 
-/* Botão de acessibilidade fixo */
-.acessibilidade-container {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 1000;
-}
-#acessibilidade-btn {
-  background-color: #1f3d1f; /* Verde escuro */
-  color: white;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px 0 0 5px;
-}
-#acessibilidade-btn:hover {
-  background-color: #163116; /* Tom mais escuro */
-}
+ .acessibilidade-container {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-#acessibilidade-opcoes {
-  position: absolute;
-  top: 0;
-  left: -120px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  #botao-acessibilidade {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #123c1e; /* verde escuro */
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px 0 0 8px;
+    transition: background-color 0.3s;
+  }
 
-#acessibilidade-opcoes button {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-}
-#acessibilidade-opcoes button:hover {
-  background-color: #a8d5a8; /* Verde médio */
-}
+  #botao-acessibilidade:hover {
+    background-color: #0a2a14; /* verde mais escuro */
+  }
 
-.hidden {
-  display: none;
-}
+  .opcoes {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    padding: 10px;
+  }
 
+  .opcoes button {
+    display: block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .opcoes button:hover {
+    background-color: #a0c8a0; /* verde médio */
+  }
 
 .botao-quadrado {
   display: inline-flex;
