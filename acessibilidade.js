@@ -1,24 +1,45 @@
-// Alternar exibição do menu com toggle na classe 'mostrar'
+// Alternar exibição do menu de acessibilidade
 document.getElementById('botao-acessibilidade').addEventListener('click', () => {
   const opcoes = document.getElementById('opcoes-acessibilidade');
+  // Toggle da classe "mostrar" para mostrar/ocultar o menu
   opcoes.classList.toggle('mostrar');
 });
 
-// Aumentar fonte
+// Aumentar fonte e padding dos containers
 document.getElementById('aumentar-fonte').addEventListener('click', () => {
   const elementos = document.querySelectorAll('p, h1, h2, h3, h4, h5, span, li, a, div');
   elementos.forEach(el => {
-    let tamanhoAtual = window.getComputedStyle(el).fontSize;
-    el.style.fontSize = (parseFloat(tamanhoAtual) + 2) + "px";
+    const estilo = window.getComputedStyle(el);
+    const tamanhoAtual = parseFloat(estilo.fontSize);
+    const paddingTop = parseFloat(estilo.paddingTop) || 0;
+    const paddingBottom = parseFloat(estilo.paddingBottom) || 0;
+
+    el.style.fontSize = (tamanhoAtual + 2) + "px";
+
+    if (paddingTop || paddingBottom) {
+      el.style.paddingTop = (paddingTop + 1) + "px";
+      el.style.paddingBottom = (paddingBottom + 1) + "px";
+    }
   });
 });
 
-// Diminuir fonte
+// Diminuir fonte e padding dos containers
 document.getElementById('diminuir-fonte').addEventListener('click', () => {
   const elementos = document.querySelectorAll('p, h1, h2, h3, h4, h5, span, li, a, div');
   elementos.forEach(el => {
-    let tamanhoAtual = window.getComputedStyle(el).fontSize;
-    el.style.fontSize = (parseFloat(tamanhoAtual) - 2) + "px";
+    const estilo = window.getComputedStyle(el);
+    const tamanhoAtual = parseFloat(estilo.fontSize);
+    const paddingTop = parseFloat(estilo.paddingTop) || 0;
+    const paddingBottom = parseFloat(estilo.paddingBottom) || 0;
+
+    if (tamanhoAtual > 8) { // evita fonte muito pequena
+      el.style.fontSize = (tamanhoAtual - 2) + "px";
+    }
+
+    if (paddingTop > 0 || paddingBottom > 0) {
+      el.style.paddingTop = Math.max(paddingTop - 1, 0) + "px";
+      el.style.paddingBottom = Math.max(paddingBottom - 1, 0) + "px";
+    }
   });
 });
 
@@ -27,20 +48,32 @@ document.getElementById('ler-texto').addEventListener('click', () => {
   const texto = document.body.innerText;
   const utterance = new SpeechSynthesisUtterance(texto);
 
-  const setVozFeminina = () => {
+  function escolherVoz() {
     const vozes = speechSynthesis.getVoices();
 
-    // Procura voz feminina em pt-BR (com nomes comuns)
-    const vozFeminina = vozes.find(voz =>
-      voz.lang === 'pt-BR' &&
+    // Tenta achar voz feminina pt-BR mais "comum"
+    let vozFeminina = vozes.find(voz =>
+      voz.lang.toLowerCase().startsWith('pt-br') &&
       (
         voz.name.toLowerCase().includes('feminina') ||
         voz.name.toLowerCase().includes('luciana') ||
         voz.name.toLowerCase().includes('fernanda') ||
-        voz.name.toLowerCase().includes('brasil') ||
-        voz.name.toLowerCase().includes('pt-br')
+        voz.name.toLowerCase().includes('google português') ||
+        voz.name.toLowerCase().includes('brasil')
       )
     );
+
+    if (!vozFeminina) {
+      // tenta voz com "female"
+      vozFeminina = vozes.find(voz =>
+        voz.lang.toLowerCase().startsWith('pt-br') && voz.name.toLowerCase().includes('female')
+      );
+    }
+
+    if (!vozFeminina) {
+      // fallback para qualquer voz pt-BR
+      vozFeminina = vozes.find(voz => voz.lang.toLowerCase().startsWith('pt-br'));
+    }
 
     if (vozFeminina) {
       utterance.voice = vozFeminina;
@@ -49,11 +82,11 @@ document.getElementById('ler-texto').addEventListener('click', () => {
 
     speechSynthesis.cancel();
     speechSynthesis.speak(utterance);
-  };
+  }
 
   if (speechSynthesis.getVoices().length === 0) {
-    speechSynthesis.addEventListener('voiceschanged', setVozFeminina, { once: true });
+    speechSynthesis.addEventListener('voiceschanged', escolherVoz, { once: true });
   } else {
-    setVozFeminina();
+    escolherVoz();
   }
 });
