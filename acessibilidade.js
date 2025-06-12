@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="estilos.css" />
+<link rel="stylesheet" href="style.css" />
 <script>
 document.getElementById('botao-acessibilidade').addEventListener('click', function() {
     const opcoes = document.getElementById('opcoes-acessibilidade');
