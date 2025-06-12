@@ -43,55 +43,53 @@ body {
   background-color: white;
 }
 
- .acessibilidade-container {
-    position: fixed;
-    top: 40%;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
+#acessibilidade-container {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;
+}
 
-  #botao-acessibilidade {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    background-color: #123c1e; /* verde escuro */
-    color: white;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 8px 0 0 8px;
-    transition: background-color 0.3s;
-  }
+#botao-acessibilidade {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-color: #0a3d1c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+}
 
-  #botao-acessibilidade:hover {
-    background-color: #0a2a14; /* verde mais escuro */
-  }
+#botao-acessibilidade:hover {
+  background-color: #062d14;
+}
 
-  .opcoes {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin-top: 10px;
-    padding: 10px;
-  }
+#opcoes-acessibilidade {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
-  .opcoes button {
-    display: block;
-    margin: 5px 0;
-    padding: 5px 10px;
-    border: none;
-    background-color: #e0e0e0;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
+#opcoes-acessibilidade button {
+  margin: 5px 0;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-  .opcoes button:hover {
-    background-color: #a0c8a0; /* verde médio */
-  }
+#opcoes-acessibilidade button:hover {
+  background-color: #b7d8b7;
+}
+
 
 .botao-quadrado {
   display: inline-flex;
