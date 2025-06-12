@@ -90,6 +90,19 @@ body {
   background-color: #b7d8b7;
 }
 
+/* Mostrar/esconder opções */
+#opcoes-acessibilidade.ativo {
+  display: block !important;
+}
+
+/* Classe para aumentar fonte */
+.aumentar-fonte .Texto {
+  font-size: 30px !important;
+}
+
+.aumentar-fonte .descricaotexto {
+  font-size: 25px !important;
+}
 
 .botao-quadrado {
   display: inline-flex;

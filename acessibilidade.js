@@ -1,44 +1,58 @@
-<link rel="stylesheet" href="style.css" />
-<script>
-document.getElementById('botao-acessibilidade').addEventListener('click', function() {
-    const opcoes = document.getElementById('opcoes-acessibilidade');
-    const expanded = opcoes.style.display === 'block';
-    opcoes.style.display = expanded ? 'none' : 'block';
+// Toggle mostrar/esconder opções
+document.getElementById('botao-acessibilidade').addEventListener('click', () => {
+  const opcoes = document.getElementById('opcoes-acessibilidade');
+  if (opcoes.style.display === 'block') {
+    opcoes.style.display = 'none';
+  } else {
+    opcoes.style.display = 'block';
+  }
 });
 
-let currentFontSize = 1.0;
+// Aumentar fonte
+document.getElementById('aumentar-fonte').addEventListener('click', () => {
+  document.body.classList.add('aumentar-fonte');
+});
 
-document.getElementById('aumentar-fonte').addEventListener('click', function() {
-    currentFontSize += 0.1;
-    document.querySelectorAll('body, body *').forEach(function(el) {
-        if (el.nodeType === 1 && window.getComputedStyle(el).fontSize) {
-            const size = parseFloat(window.getComputedStyle(el).fontSize);
-            el.style.fontSize = (size * 1.1) + 'px';
-        }
+// Diminuir fonte
+document.getElementById('diminuir-fonte').addEventListener('click', () => {
+  document.body.classList.remove('aumentar-fonte');
+});
+
+// Ler texto com voz feminina em pt-BR, fallback para padrão
+document.getElementById('ler-texto').addEventListener('click', () => {
+  const texto = document.body.innerText;
+  const utterance = new SpeechSynthesisUtterance(texto);
+
+  // Espera carregar as vozes, pode precisar de setTimeout em alguns browsers
+  function falar() {
+    const vozes = speechSynthesis.getVoices();
+    // Procura voz feminina pt-BR (procura “female” no nome ou lang)
+    let vozFeminina = vozes.find(v => {
+      return (v.lang === 'pt-BR' || v.lang.startsWith('pt')) &&
+        /female|feminina|woman|woman voice/i.test(v.name);
     });
-});
 
-document.getElementById('diminuir-fonte').addEventListener('click', function() {
-    currentFontSize -= 0.1;
-    document.querySelectorAll('body, body *').forEach(function(el) {
-        if (el.nodeType === 1 && window.getComputedStyle(el).fontSize) {
-            const size = parseFloat(window.getComputedStyle(el).fontSize);
-            el.style.fontSize = (size * 0.9) + 'px';
-        }
-    });
-});
-
-// Ler texto com voz feminina
-const synth = window.speechSynthesis;
-document.getElementById('ler-texto').addEventListener('click', function () {
-    if (synth.speaking) {
-        synth.cancel();
-        return;
+    // Se não achar pela regex, tenta só pt-BR (pode pegar qualquer)
+    if (!vozFeminina) {
+      vozFeminina = vozes.find(v => v.lang === 'pt-BR');
     }
-    const texto = document.body.innerText;
-    const utterance = new SpeechSynthesisUtterance(texto);
-    const voices = synth.getVoices();
-    utterance.voice = voices.find(v => v.name.toLowerCase().includes('female') || v.name.toLowerCase().includes('feminina')) || voices[0];
-    synth.speak(utterance);
+
+    if (vozFeminina) {
+      utterance.voice = vozFeminina;
+    } else {
+      utterance.lang = 'pt-BR'; // fallback
+    }
+
+    speechSynthesis.cancel();
+    speechSynthesis.speak(utterance);
+  }
+
+  // Caso getVoices() ainda esteja vazio, tentar esperar um pouco
+  if (speechSynthesis.getVoices().length === 0) {
+    speechSynthesis.onvoiceschanged = () => {
+      falar();
+    };
+  } else {
+    falar();
+  }
 });
-</script>
