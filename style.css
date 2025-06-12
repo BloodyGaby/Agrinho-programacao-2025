@@ -56,7 +56,7 @@ body {
   border: none;
   border-radius: 8px 0 0 8px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 1100; /* para ficar acima do VLibras */
   writing-mode: vertical-rl;
   text-orientation: mixed;
   user-select: none;
@@ -68,28 +68,29 @@ body {
 }
 
 /* Container das opções, inicialmente oculto */
-#acessibilidade-opcoes {
+#opcoes-acessibilidade {
   display: none;
   flex-direction: column;
   gap: 10px;
   position: fixed;
-  bottom: 60px;
-  right: 10px;
+  top: 50%;
+  right: 50px; /* deixa o menu ao lado do botão */
+  transform: translateY(-50%);
   background-color: #144d14; /* verde escuro */
   padding: 12px 16px;
   border-radius: 8px;
-  z-index: 1000;
+  z-index: 1101;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   max-width: 200px;
 }
 
 /* Classe que mostra o container */
-#acessibilidade-opcoes.mostrar {
+#opcoes-acessibilidade.mostrar {
   display: flex;
 }
 
 /* Estilo dos botões dentro do menu */
-#acessibilidade-opcoes button {
+#opcoes-acessibilidade button {
   background-color: #206020;
   color: white;
   border: none;
@@ -102,8 +103,8 @@ body {
   user-select: none;
 }
 
-#acessibilidade-opcoes button:hover,
-#acessibilidade-opcoes button:focus {
+#opcoes-acessibilidade button:hover,
+#opcoes-acessibilidade button:focus {
   background-color: #2ea32e;
   outline: none;
 }

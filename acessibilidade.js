@@ -1,7 +1,7 @@
-// Alternar exibição do menu com toggle de classe
+// Alternar exibição do menu com toggle na classe 'mostrar'
 document.getElementById('botao-acessibilidade').addEventListener('click', () => {
   const opcoes = document.getElementById('opcoes-acessibilidade');
-  opcoes.classList.toggle('mostrar'); // adiciona/remove a classe 'mostrar'
+  opcoes.classList.toggle('mostrar');
 });
 
 // Aumentar fonte
@@ -27,10 +27,10 @@ document.getElementById('ler-texto').addEventListener('click', () => {
   const texto = document.body.innerText;
   const utterance = new SpeechSynthesisUtterance(texto);
 
-  // Função que define a voz feminina
   const setVozFeminina = () => {
     const vozes = speechSynthesis.getVoices();
 
+    // Procura voz feminina em pt-BR (com nomes comuns)
     const vozFeminina = vozes.find(voz =>
       voz.lang === 'pt-BR' &&
       (
@@ -47,7 +47,7 @@ document.getElementById('ler-texto').addEventListener('click', () => {
     }
     utterance.lang = 'pt-BR';
 
-    speechSynthesis.cancel(); // Cancela qualquer leitura anterior
+    speechSynthesis.cancel();
     speechSynthesis.speak(utterance);
   };
 
