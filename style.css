@@ -46,7 +46,7 @@ body {
 /* Botão fixo lateral de acessibilidade */
 #botao-acessibilidade {
   position: fixed;
-  top: 50%;
+  top: 35%;
   right: 0;
   transform: translateY(-50%);
   background-color: #144d14; /* verde escuro */
