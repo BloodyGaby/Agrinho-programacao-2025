@@ -1,34 +1,36 @@
+// Alternar exibição do menu
 document.getElementById('botao-acessibilidade').addEventListener('click', () => {
   const opcoes = document.getElementById('opcoes-acessibilidade');
-  if (opcoes.style.display === 'flex') {
-    opcoes.style.display = 'none';
-  } else {
-    opcoes.style.display = 'flex';
-  }
+  opcoes.style.display = (opcoes.style.display === 'flex') ? 'none' : 'flex';
 });
 
+// Aumentar fonte
 document.getElementById('aumentar-fonte').addEventListener('click', () => {
-  document.body.classList.add('aumentar-fonte');
+  const elementos = document.querySelectorAll('p, h1, h2, h3, h4, h5, span, li, a, div');
+  elementos.forEach(el => {
+    let tamanhoAtual = window.getComputedStyle(el).fontSize;
+    el.style.fontSize = (parseFloat(tamanhoAtual) + 2) + "px";
+  });
 });
 
+// Diminuir fonte
 document.getElementById('diminuir-fonte').addEventListener('click', () => {
-  document.body.classList.remove('aumentar-fonte');
+  const elementos = document.querySelectorAll('p, h1, h2, h3, h4, h5, span, li, a, div');
+  elementos.forEach(el => {
+    let tamanhoAtual = window.getComputedStyle(el).fontSize;
+    el.style.fontSize = (parseFloat(tamanhoAtual) - 2) + "px";
+  });
 });
 
+// Leitor de texto com voz feminina
 document.getElementById('ler-texto').addEventListener('click', () => {
   const texto = document.body.innerText;
   const utterance = new SpeechSynthesisUtterance(texto);
 
-  function falar() {
+  // Verifica vozes disponíveis
+  const setVoice = () => {
     const vozes = speechSynthesis.getVoices();
-    let vozFeminina = vozes.find(v => {
-      return (v.lang === 'pt-BR' || v.lang.startsWith('pt')) &&
-        /female|feminina|woman|mulher/i.test(v.name);
-    });
-
-    if (!vozFeminina) {
-      vozFeminina = vozes.find(v => v.lang === 'pt-BR');
-    }
+    const vozFeminina = vozes.find(v => v.lang === 'pt-BR' && v.name.toLowerCase().includes("feminina"));
 
     if (vozFeminina) {
       utterance.voice = vozFeminina;
@@ -36,15 +38,13 @@ document.getElementById('ler-texto').addEventListener('click', () => {
       utterance.lang = 'pt-BR';
     }
 
-    speechSynthesis.cancel();
+    speechSynthesis.cancel(); // Evita sobreposição
     speechSynthesis.speak(utterance);
-  }
+  };
 
   if (speechSynthesis.getVoices().length === 0) {
-    speechSynthesis.onvoiceschanged = () => {
-      falar();
-    };
+    speechSynthesis.addEventListener('voiceschanged', setVoice);
   } else {
-    falar();
+    setVoice();
   }
 });
