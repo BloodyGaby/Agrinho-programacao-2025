@@ -22,29 +22,41 @@ document.getElementById('diminuir-fonte').addEventListener('click', () => {
   });
 });
 
-// Leitor de texto com voz feminina
+// Leitor de texto com voz feminina em pt-BR
 document.getElementById('ler-texto').addEventListener('click', () => {
   const texto = document.body.innerText;
   const utterance = new SpeechSynthesisUtterance(texto);
 
-  // Verifica vozes disponíveis
-  const setVoice = () => {
+  // Função que define a voz
+  const setVozFeminina = () => {
     const vozes = speechSynthesis.getVoices();
-    const vozFeminina = vozes.find(v => v.lang === 'pt-BR' && v.name.toLowerCase().includes("feminina"));
 
+    // Tenta encontrar uma voz feminina adequada
+    const vozFeminina = vozes.find(voz =>
+      voz.lang === 'pt-BR' &&
+      (
+        voz.name.toLowerCase().includes('feminina') ||
+        voz.name.toLowerCase().includes('luciana') ||
+        voz.name.toLowerCase().includes('fernanda') ||
+        voz.name.toLowerCase().includes('brasil') ||
+        voz.name.toLowerCase().includes('pt-br')
+      )
+    );
+
+    // Aplica a voz encontrada ou apenas define o idioma
     if (vozFeminina) {
       utterance.voice = vozFeminina;
-    } else {
-      utterance.lang = 'pt-BR';
     }
+    utterance.lang = 'pt-BR';
 
-    speechSynthesis.cancel(); // Evita sobreposição
+    speechSynthesis.cancel(); // Cancela qualquer leitura anterior
     speechSynthesis.speak(utterance);
   };
 
+  // Aguarda as vozes carregarem, se necessário
   if (speechSynthesis.getVoices().length === 0) {
-    speechSynthesis.addEventListener('voiceschanged', setVoice);
+    speechSynthesis.addEventListener('voiceschanged', setVozFeminina, { once: true });
   } else {
-    setVoice();
+    setVozFeminina();
   }
 });
