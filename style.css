@@ -1,16 +1,13 @@
-body{
-    background-color: #55A455;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #55A455;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: sans-serif;
 }
 
 /* Retângulo e banner em fluxo normal */
@@ -109,7 +106,6 @@ body {
   outline: none;
 }
 
-
 .botao-quadrado {
   display: inline-flex;
   align-items: center;
@@ -153,13 +149,12 @@ body {
 }
 
 .info-link {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: #ffffff; 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff; 
 }
-
 
 .logo-info {
   width: 20px;
@@ -171,33 +166,30 @@ body {
   transform: scale(1.1);
 }
 
-
 .nome-central {
-    flex-grow: 1; 
-    text-align: center; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+  flex-grow: 1; 
+  text-align: center; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 
-
-.Logoinstagram { 
+/* Corrigi o nome da classe para lowercase */
+.logoinstagram { 
   width: 24px;
   height: 24px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.Logoinstagram:hover {
+.logoinstagram:hover {
   transform: scale(1.1);
 }
 
-
 .instagram-link {
-    display: flex; 
-    align-items: center;
+  display: flex; 
+  align-items: center;
 }
-
 
 /* Responsividade para celular */
 @media (max-width: 768px) {
@@ -206,7 +198,6 @@ body {
     gap: 10px;
     text-align: center;
   }
-
 
   .info-link,
   .instagram-link {
@@ -218,15 +209,15 @@ body {
     width: 18px;
     height: 18px;
   }
-  .Logoinstagram {
+  .logoinstagram {
     width: 20px;
     height: 20px;
   }
   .nome-central {
-      order: 2; 
-      margin-top: 5px; 
-      margin-bottom: 5px;
-      white-space: normal; 
-      text-overflow: clip; 
+    order: 2; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    white-space: normal; 
+    text-overflow: clip; 
   }
 }
