@@ -26,7 +26,7 @@
 }
 
 .textoCampo {
-  margin-left: auto;
+  margin-left: 40px; /* ajustado para alinhar à esquerda */
   margin-right: 40px;
   padding: 30px;
   width: 600px;
@@ -199,7 +199,7 @@
   .ruraltexto,
   .texto1rural {
     width: 90%;
-    margin-left: auto;
+    margin-left: 10px;  /* ajuste para alinhar à esquerda */
     margin-right: auto;
   }
   .lavoura {
@@ -234,6 +234,8 @@
     font-size: 18px;
     height: auto;
     padding: 10px;
+    margin-left: 10px;  /* mantém alinhado à esquerda */
+    margin-right: auto;
   }
   .descricao,
   .descricao2,
