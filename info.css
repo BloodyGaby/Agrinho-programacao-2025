@@ -1,230 +1,117 @@
-.sobreMim{
-    margin-left: 30px;
-    margin-right:auto ;
-     border: 2px solid black;
+.sobreMim,
+.tituloSobreoProjeto,
+.TituloDificuldades,
+.desenvolvimento,
+.Notasfinais,
+.ReferenciaTitulo,
+.agradecimento {
+  margin-left: auto;
+  margin-right: auto;
   width: 600px;
-  height: 200px;
+  min-height: 150px;
   background-color: #A0CCA0;
   font-size: 25px;
   color: #000000;
   text-align: center;
-  line-height: 50px; 
+  line-height: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+.sobreMim {
   margin-top: 100px;
-  margin-bottom: 50px;
-  padding:50px;
-}
-.sobremimTexto{
-     width: 1100px;
-    height: 300px;
-    margin-left: 20px;
-    margin-right: auto;
-    background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-   border: 2px solid black;
-  margin-bottom: 50px;
-  padding:20px;
-   justify-content: center;  
-  align-items: center;      
-  text-align: center;
+  height: auto;
 }
 
-.tituloSobreoProjeto{
-      margin-left: 30px;
-    margin-right:auto ;
-     border: 2px solid black;
-  width: 600px;
-  height: 150px;
-  background-color: #A0CCA0;
-  font-size: 20px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding:50px;
-}
-.projeto{
-     width: 1100px;
-    height: 350px;
-    margin-left: 20px;
-    margin-right: auto;
-    background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 30px;
-   border: 2px solid black;
-  margin-bottom: 50px;
-  padding:20px;
-   justify-content: center;  
-  align-items: center;      
-  text-align: center;
-}
-
-.TituloDificuldades{
-  margin-left: 30px;
-margin-right:auto ;
- border: 2px solid black;
-  width: 600px;
-  height: 150px;
-  background-color: #A0CCA0;
-  font-size: 20px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding:50px;
-   justify-content: center;  
-  align-items: center;      
-  text-align: center;
-}
-.dificuldades{
-         width: 1100px;
-    height: 400px;
-    margin-left: 20px;
-    margin-right: auto;
-    background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-   border: 2px solid black;
-  margin-bottom: 50px;
-  padding:20px;
-}
-.desenvolvimento{
- margin-left: 30px;
-    margin-right:auto ;
-     border: 2px solid black;
-  width: 600px;
-  height: 150px;
-  background-color: #A0CCA0;
-  font-size: 20px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding:50px;
-}
-
-.Desenvolvimentotexto{
-         width: 1200px;
-    height: 70S0px;
-    margin-left: 20px;
-    margin-right: auto;
-    background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-   border: 2px solid black;
-  margin-bottom: 50px;
-  padding:20px;
-}
-
-
-.Notasfinais{
- margin-left: 30px;
-    margin-right:auto ;
-     border: 2px solid black;
-  width: 600px;
-  height: 150px;
-  background-color: #A0CCA0;
-  font-size: 20px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding:50px;
-}
-
-.DesenvolvimentoTexto{
-         width: 1200px;
-    height: 70S0px;
-    margin-left: 20px;
-    margin-right: auto;
-    background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-   border: 2px solid black;
-  margin-bottom: 50px;
-  padding:20px;
-}
-
-
-.NotasfinaisTexto{
-         width: 1200px;
-    height: 70S0px;
-    margin-left: 20px;
-    margin-right: auto;
-    background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-   border: 2px solid black;
-  margin-bottom: 50px;
-  padding:20px;
-}
-
-.ReferenciaTitulo{
- margin-left: 30px;
-    margin-right:auto ;
-     border: 2px solid black;
-  width: 600px;
-  height: 150px;
-  background-color: #A0CCA0;
-  font-size: 20px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding:50px;
-
-}
-.referenciaslinks{
-         width: 1200px;
-    height: 70S0px;
-    margin-left: 20px;
-    margin-right: auto;
-    background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
-  margin-top: 50px;
-   border: 2px solid black;
-  margin-bottom: 50px;
-  padding:20px;
-}
-
-.agradecimento{
- margin-left: auto;
-    margin-right:auto ;
-     border: 2px solid black;
-  width: 600px;
-  height: 200px;
-  background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px; 
+.agradecimento {
+  height: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  padding:50px;
+}
+
+.sobremimTexto,
+.projeto,
+.dificuldades,
+.Desenvolvimentotexto,
+.DesenvolvimentoTexto,
+.NotasfinaisTexto,
+.referenciaslinks {
+  width: 1100px;
+  min-height: 300px;
+  margin: 50px auto;
+  background-color: #A0CCA0;
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  height: auto;
+}
+
+.Desenvolvimentotexto,
+.DesenvolvimentoTexto,
+.NotasfinaisTexto,
+.referenciaslinks {
+  width: 1200px;
+  min-height: 750px;
+}
+
+.projeto {
+  min-height: 350px;
+}
+
+.dificuldades {
+  min-height: 400px;
+}
+
+/* ----------- RESPONSIVO ----------- */
+@media (max-width: 900px) {
+  .sobreMim,
+  .tituloSobreoProjeto,
+  .TituloDificuldades,
+  .desenvolvimento,
+  .Notasfinais,
+  .ReferenciaTitulo,
+  .agradecimento,
+  .sobremimTexto,
+  .projeto,
+  .dificuldades,
+  .Desenvolvimentotexto,
+  .DesenvolvimentoTexto,
+  .NotasfinaisTexto,
+  .referenciaslinks {
+    width: 90% !important;
+    font-size: 18px !important;
+    padding: 20px !important;
+    line-height: 1.6em !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobreMim,
+  .tituloSobreoProjeto,
+  .TituloDificuldades,
+  .desenvolvimento,
+  .Notasfinais,
+  .ReferenciaTitulo,
+  .agradecimento,
+  .sobremimTexto,
+  .projeto,
+  .dificuldades,
+  .Desenvolvimentotexto,
+  .DesenvolvimentoTexto,
+  .NotasfinaisTexto,
+  .referenciaslinks {
+    width: 100% !important;
+    font-size: 16px !important;
+    padding: 15px !important;
+    line-height: 1.4em !important;
+  }
 }

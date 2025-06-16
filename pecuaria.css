@@ -1,162 +1,181 @@
-.banner1{
+.banner1 {
   width: 100%;
 }
 
-
-.pecuariainicio{
-     width: 700px;
-  font-size: 25px;
-  height: 100px;
-  background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
-  margin-left: 40px;
-  margin-right: auto;
-  border: 2px solid black;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-  padding:20px;
-
-}
-.pecuariatexto{
-    padding: 20px;
+.pecuariainicio {
   width: 700px;
-  height: 800px;
+  font-size: 25px;
+  min-height: 100px;
+  background-color: #A0CCA0;
+  color: rgb(0, 0, 0);
+  margin: 50px 0 50px 40px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+.pecuariatexto {
+  padding: 20px;
+  width: 700px;
+  min-height: 800px;
   font-size: 30px;
   background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
-  margin-left: 40px;
-  margin-right: auto;
+  color: rgb(0, 0, 0);
+  margin: 0 0 50px 40px;
   border: 2px solid black;
-  justify-content: center;  
-  align-items: center;      
   text-align: center;
-  margin-bottom: 50px;
-
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
-.descricaotexto{
-    font-size: 20px;
-    margin-top: 130px;
+.descricaotexto {
+  font-size: 20px;
+  margin-top: 130px;
 }
 
-.vaquinha{
-  margin-left: 860px;
-  margin-right:50px ;
+.vaquinha {
+  margin: -900px 50px 500px 860px;
   display: flex;
   width: 400px;
   height: 400px;
-   margin-top:-900px;
-  margin-bottom:500px; 
   border: 2px solid black;
 }
 
-.vaquinhadescricao{
-    width: 500px;
-     font-size: 20px;
-  margin-right: 30px;
-  margin-left: 800px;
-  margin-top: -500px;
-  margin-bottom: 220px;
+.vaquinhadescricao {
+  width: 500px;
+  font-size: 20px;
+  margin: -500px 30px 220px 800px;
 }
 
-
-.pecuariafoto{
-  margin-left: 860px;
-  margin-right: 30px;
+.pecuariafoto {
+  margin: -200px 30px 100px 860px;
   display: flex;
   width: 380px;
   height: 380px;
-   margin-top:-200px;
-  margin-bottom:100px; 
   border: 2px solid black;
-   object-fit: cover;
+  object-fit: cover;
 }
 
-.pecuariafotodescricao{
-   width: 500px;
-     font-size: 20px;
-  margin-right: 30px;
-  margin-left: 800px;
-  margin-top: -100px;
-  margin-bottom: 50px;
-
-}
-
-.titulopecuariaBrasil{
-     padding: 20px;
-  margin-right: auto;
-  margin-left: 100px;
+.pecuariafotodescricao {
   width: 500px;
-  height: 100px;
+  font-size: 20px;
+  margin: -100px 30px 50px 800px;
+}
+
+.titulopecuariaBrasil {
+  padding: 20px;
+  margin: 50px auto 20px 100px;
+  width: 500px;
+  min-height: 100px;
   font-size: 25px;
   background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   border: 2px solid black;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-
+  text-align: center;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
-.TextopecuariaBrasileira{
-     margin-right: auto;
-  margin-left: 50px;
+
+.TextopecuariaBrasileira {
+  margin: 50px auto 300px 50px;
   width: 600px;
-  height: 800px;
+  min-height: 800px;
   background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   border: 2px solid black;
-  margin-top: 50px;
-  margin-bottom: 300px;
-  padding:40px;
+  padding: 40px;
   font-size: 30px;
-
-
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
-
-
-.tituloPecuariaParaná{
-     padding:20px;
-  margin-right:100px ;
-  margin-left: auto;
+.tituloPecuariaParaná {
+  padding: 20px;
+  margin: -1250px 100px 50px auto;
   width: 500px;
+  min-height: 100px;
   font-size: 25px;
-  height: 100px;
   background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   border: 2px solid black;
-  margin-bottom: 50px;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-  margin-top:-1250px;
-
+  text-align: center;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
-.TextopecuariaParanaense{
-       margin-right: 50px;
-  margin-left:auto ;
+
+.TextopecuariaParanaense {
+  margin: -550px 50px 200px auto;
   width: 600px;
-  height: 800px;
+  min-height: 800px;
   background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   border: 2px solid black;
-  margin-bottom: 200px;
+  padding: 40px;
   font-size: 30px;
-margin-top: -550;
-padding:40px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
-.descricaopecuaria{
-    font-size: 20px;
-    margin-top: 120px;
-}
-.descricaopecuaria2{
-     font-size: 20px;
-    margin-top: 160px;
+.descricaopecuaria {
+  font-size: 20px;
+  margin-top: 120px;
 }
 
+.descricaopecuaria2 {
+  font-size: 20px;
+  margin-top: 160px;
+}
+
+/* ----------- RESPONSIVO ----------- */
+@media (max-width: 900px) {
+  .pecuariainicio,
+  .pecuariatexto,
+  .TextopecuariaBrasileira,
+  .TextopecuariaParanaense,
+  .titulopecuariaBrasil,
+  .tituloPecuariaParaná,
+  .vaquinha,
+  .pecuariafoto,
+  .vaquinhadescricao,
+  .pecuariafotodescricao {
+    width: 90% !important;
+    margin: 20px auto !important;
+    font-size: 18px !important;
+    padding: 15px !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .descricaopecuaria,
+  .descricaopecuaria2,
+  .descricaotexto {
+    font-size: 16px !important;
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pecuariainicio,
+  .pecuariatexto,
+  .TextopecuariaBrasileira,
+  .TextopecuariaParanaense,
+  .titulopecuariaBrasil,
+  .tituloPecuariaParaná,
+  .vaquinha,
+  .pecuariafoto,
+  .vaquinhadescricao,
+  .pecuariafotodescricao {
+    width: 100% !important;
+    font-size: 16px !important;
+    padding: 10px !important;
+  }
+
+  .descricaopecuaria,
+  .descricaopecuaria2,
+  .descricaotexto {
+    font-size: 14px !important;
+    margin-top: 20px !important;
+  }
+}

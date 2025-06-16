@@ -1,158 +1,129 @@
-.texto7{
+.texto7 {
   margin-top: 30px;
   border: 2px solid black;
   background-color: #A0CCA0;
   width: 900px;
+  max-width: 95%;
   height: 450px;
   font-size: 35px;
-  color:#000000;
+  color: #000000;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-  padding:50px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
 }
-.topicodsf{
+
+.topicodsf {
   width: 600px;
+  max-width: 95%;
   height: 100px;
-  color:#000000;
+  color: #000000;
   background-color: #A0CCA0;
   font-size: 20px;
-  display:flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right:auto ;
+  display: flex;
+  margin: 20px auto;
   border: 2px solid black;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.Listadsf{
-  width: 800px;
-  height: 200px;
-  color:#000000;
-  background-color: #A0CCA0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right:auto ;
-  display: flex;
-  border: 2px solid black;
-   font-size: 30px;
-  color:#000000;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-}
-
-.solucoes{
-  width: 500px;
-  height: 200px;
-  background-color: #A0CCA0;
-  border: 2px solid black;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  font-size: 25px;
-  color:#000000;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-}
-
-.solucoeslista{
-  width: 1000px;
-  height: 300px;
-  border: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  display: flex;
-   font-size: 20px;
-  color:#000000;
-  background-color: #A0CCA0;
-  padding:30px;
-}
-    .texto7{
-  margin-top: 30px;
-  border: 2px solid black;
-  background-color: #A0CCA0;
+.Listadsf {
   width: 900px;
-  height: 450px;
-  font-size: 35px;
-  color:#000000;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-  
-}
-.topicodsf{
-  width: 600px;
-  height: 100px;
-  color:#000000;
-  background-color: #A0CCA0;
-  font-size: 20px;
-  display:flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right:auto ;
-  border: 2px solid black;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-}
-
-.Listadsf{
-  width: 900px;
+  max-width: 95%;
   height: 300px;
-  color:#000000;
+  color: #000000;
   background-color: #A0CCA0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right:auto ;
+  margin: 20px auto;
   display: flex;
   border: 2px solid black;
-   font-size: 15px;
-  color:#000000;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-  padding:30px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
-.solucoes{
+.solucoes {
   width: 400px;
+  max-width: 95%;
   height: 200px;
   background-color: #A0CCA0;
   border: 2px solid black;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 15px auto;
   display: flex;
   font-size: 20px;
-  color:#000000;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-  padding:20px;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.descricao{
+.solucoeslista {
+  width: 1000px;
+  max-width: 95%;
+  height: 300px;
+  border: 2px solid black;
+  margin: 0 auto 30px auto;
+  display: flex;
+  font-size: 20px;
+  color: #000000;
+  background-color: #A0CCA0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.descricao {
   width: 500px;
+  max-width: 95%;
   height: 50px;
   background-color: #A0CCA0;
   border: 2px solid black;
-    font-size: 15px;
-    margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .texto7 {
+    font-size: 24px;
+    height: auto;
+    padding: 20px;
+  }
+  .topicodsf {
+    height: auto;
+    font-size: 16px;
+  }
+  .Listadsf {
+    height: auto;
+    font-size: 14px;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .solucoes {
+    width: 90%;
+    height: auto;
+    font-size: 18px;
+    padding: 15px;
+  }
+  .solucoeslista {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .descricao {
+    width: 90%;
+    height: auto;
+  }
 }
