@@ -19,6 +19,7 @@
   align-items: center;      
   text-align: center; 
   padding:20px;
+   border-radius: 15px;
 }
 .Textoagricultura{
   padding: 40px;
@@ -34,6 +35,7 @@
   align-items: center;      
   text-align: center;
   margin-bottom: 50px;
+   border-radius: 15px;
 }
 
 .alface{
@@ -45,6 +47,7 @@
   margin-top:-600px;
   margin-bottom:500px; 
   border: 2px solid black;
+   border-radius: 15px;
 }
 .descricaoalface{
   font-size: 18px;
@@ -52,6 +55,7 @@
   margin-left: 1000px;
   margin-top: -500px;
   margin-bottom: 220px;
+
 }
 
 .Plantação{
@@ -64,6 +68,7 @@
   margin-bottom:100px; 
   border: 2px solid black;
   object-fit: cover;
+   border-radius: 15px;
 }
 .descricaoimagem2{
   font-size: 18px;
@@ -87,6 +92,7 @@
   justify-content: center;  
   align-items: center;      
   text-align: center; 
+   border-radius: 15px;
 }
 .TextoAgriculturaBrasil{
   margin-right: auto;
@@ -100,6 +106,7 @@
   margin-bottom: 300px;
   padding:40px;
   font-size: 30px;
+   border-radius: 15px;
 }
 .TituloAgriculturaParana{
   padding:20px;
@@ -116,6 +123,7 @@
   align-items: center;      
   text-align: center; 
   margin-top:-1113px;
+   border-radius: 15px;
 }
 .TextoAgriculturaParanaense{
   margin-right: 50px;
@@ -129,6 +137,7 @@
   font-size: 30px;
   margin-top: -550;
   padding:40px;
+   border-radius: 15px;
 }
 
 .descricaolista{

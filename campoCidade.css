@@ -23,6 +23,7 @@
   line-height: 50px;
   margin-top: 100px;
   box-sizing: border-box;
+   border-radius: 15px;
 }
 
 .textoCampo {
@@ -43,6 +44,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+   border-radius: 15px;
 }
 
 .lavoura {
@@ -56,6 +58,7 @@
   border: 2px solid black;
   margin-bottom: 100px;
   box-sizing: border-box;
+   border-radius: 15px;
 }
 
 .descricao3 {
@@ -76,6 +79,7 @@
   border: 2px solid black;
   margin-top: -100px;
   box-sizing: border-box;
+   border-radius: 15px;
 }
 
 .descricao2 {
@@ -103,6 +107,7 @@
   text-align: center;
   display: flex;
   box-sizing: border-box;
+   border-radius: 15px;
 }
 
 .urbanoTexto {
@@ -123,6 +128,7 @@
   text-align: center;
   display: flex;
   box-sizing: border-box;
+   border-radius: 15px;
 }
 
 .texto1Urbano {
@@ -142,6 +148,7 @@
   font-size: 30px;
   display: flex;
   box-sizing: border-box;
+   border-radius: 15px;
 }
 
 .ruraltexto {
@@ -162,6 +169,7 @@
   margin-top: -950px;
   display: flex;
   box-sizing: border-box;
+   border-radius: 15px;
 }
 
 .texto1rural {
@@ -182,6 +190,7 @@
   display: flex;
   box-sizing: border-box;
   padding:30px;
+   border-radius: 15px;
 }
 
 
