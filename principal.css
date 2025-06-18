@@ -54,12 +54,15 @@
     overflow-wrap: break-word;
      border-radius: 15px;
 }
-.festejando{
-  width: 400px;
+.festejando,
+.campocidade,
+.agricultura,
+.pecuaria,
+.desafios {
+    width: 400px;
     min-height: 100px;
     color: #000000;
     background-color: #A0CCA0;
-    margin: 0 auto 50px 30px; /* centraliza e afasta */
     display: flex;
     border: 2px solid black;
     font-size: 15px;
@@ -69,81 +72,14 @@
     padding: 20px;
     box-sizing: border-box;
     overflow-wrap: break-word;
-     border-radius: 15px;
-}
-.campocidade{
-  width: 400px;
-    min-height: 100px;
-    color: #000000;
-    background-color: #A0CCA0;
-    margin: -150px auto 50px auto; /* centraliza e afasta */
-    display: flex;
-    border: 2px solid black;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-     border-radius: 15px;
+    border-radius: 15px;
 }
 
-.agricultura{
-  width: 400px;
-    min-height: 100px;
-    color: #000000;
-    background-color: #A0CCA0;
-    margin: -150px 30px 50px auto; /* centraliza e afasta */
-    display: flex;
-    border: 2px solid black;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-     border-radius: 15px;
-}
-
-.pecuaria{
-  width: 400px;
-    min-height: 100px;
-    color: #000000;
-    background-color: #A0CCA0;
-    margin: 0 auto 50px 130px; /* centraliza e afasta */
-    display: flex;
-    border: 2px solid black;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-     border-radius: 15px;
-}
-
-.desafios{
-  width: 400px;
-    min-height: 100px;
-    color: #000000;
-    background-color: #A0CCA0;
-    margin: -160px 130px 50px auto; /* centraliza e afasta */
-    display: flex;
-    border: 2px solid black;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-     border-radius: 15px;
-}
-
-
+.festejando { margin: 0 auto 50px 30px; }
+.campocidade { margin: -150px auto 50px auto; }
+.agricultura { margin: -150px 30px 50px auto; }
+.pecuaria { margin: 0 auto 50px 130px; }
+.desafios { margin: -160px 130px 50px auto; }
 
 .TituloLista2 {
     padding: 20px;
@@ -181,9 +117,13 @@
   .Texto,
   .titulolista,
   .tituloLista1,
-  .lista1,
   .TituloLista2,
-  .Lista2 {
+  .Lista2,
+  .festejando,
+  .campocidade,
+  .agricultura,
+  .pecuaria,
+  .desafios {
     width: 90% !important;
     min-height: auto !important;
     height: auto !important;
@@ -197,19 +137,19 @@
     margin-top: 40px !important;
     font-size: 16px !important;
   }
-
-  .TituloLista2 {
-    margin-top: 0 !important;
-  }
 }
 
 @media (max-width: 480px) {
   .Texto,
   .titulolista,
   .tituloLista1,
-  .lista1,
   .TituloLista2,
-  .Lista2 {
+  .Lista2,
+  .festejando,
+  .campocidade,
+  .agricultura,
+  .pecuaria,
+  .desafios {
     width: 100% !important;
     font-size: 16px !important;
     padding: 10px !important;
@@ -218,9 +158,5 @@
   .descricaotexto {
     font-size: 14px !important;
     margin-top: 20px !important;
-  }
-
-  .TituloLista2 {
-    margin-top: 0 !important;
   }
 }
