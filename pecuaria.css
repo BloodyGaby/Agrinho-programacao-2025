@@ -91,9 +91,11 @@
   overflow-wrap: break-word;
 }
 
+
+
 .tituloPecuariaParaná {
   padding: 20px;
-  margin: -1250px 100px 50px auto;
+  margin: -1255px 100px 50px auto;
   width: 500px;
   min-height: 100px;
   font-size: 25px;
@@ -106,9 +108,9 @@
 }
 
 .TextopecuariaParanaense {
-  margin: -550px 50px 200px auto;
+  margin: 5px 50px 100px auto;
   width: 600px;
-  min-height: 800px;
+  min-height: 400px;
   background-color: #A0CCA0;
   color: rgb(0, 0, 0);
   border: 2px solid black;

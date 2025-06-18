@@ -14,6 +14,7 @@
     padding: 20px;
     box-sizing: border-box;
     overflow-wrap: break-word;
+     border-radius: 15px;
 }
 
 .descricaotexto {
@@ -36,6 +37,7 @@
     padding: 50px;
     box-sizing: border-box;
     overflow-wrap: break-word;
+     border-radius: 15px;
 }
 
 .tituloLista1 {
@@ -50,24 +52,98 @@
     text-align: center;
     box-sizing: border-box;
     overflow-wrap: break-word;
+     border-radius: 15px;
 }
-
-.lista1 {
-    width: 500px;
-    min-height: 200px;
+.festejando{
+  width: 400px;
+    min-height: 100px;
     color: #000000;
     background-color: #A0CCA0;
-    margin: 0 auto 50px auto; /* centraliza e afasta */
+    margin: 0 auto 50px 30px; /* centraliza e afasta */
     display: flex;
     border: 2px solid black;
-    font-size: 20px;
+    font-size: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
     overflow-wrap: break-word;
+     border-radius: 15px;
 }
+.campocidade{
+  width: 400px;
+    min-height: 100px;
+    color: #000000;
+    background-color: #A0CCA0;
+    margin: -150px auto 50px auto; /* centraliza e afasta */
+    display: flex;
+    border: 2px solid black;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+     border-radius: 15px;
+}
+
+.agricultura{
+  width: 400px;
+    min-height: 100px;
+    color: #000000;
+    background-color: #A0CCA0;
+    margin: -150px 30px 50px auto; /* centraliza e afasta */
+    display: flex;
+    border: 2px solid black;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+     border-radius: 15px;
+}
+
+.pecuaria{
+  width: 400px;
+    min-height: 100px;
+    color: #000000;
+    background-color: #A0CCA0;
+    margin: 0 auto 50px 130px; /* centraliza e afasta */
+    display: flex;
+    border: 2px solid black;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+     border-radius: 15px;
+}
+
+.desafios{
+  width: 400px;
+    min-height: 100px;
+    color: #000000;
+    background-color: #A0CCA0;
+    margin: -160px 130px 50px auto; /* centraliza e afasta */
+    display: flex;
+    border: 2px solid black;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+     border-radius: 15px;
+}
+
+
 
 .TituloLista2 {
     padding: 20px;
@@ -82,20 +158,22 @@
     box-sizing: border-box;
     overflow-wrap: break-word;
     margin-top: 0;
+     border-radius: 15px;
 }
 
 .Lista2 {
     margin: 0 auto 100px auto; /* centraliza e afasta do rodapé */
-    width: 500px;
-    min-height: 150px;
+    width: 400px;
+    min-height: 100px;
     background-color: #A0CCA0;
     color: rgb(0, 0, 0);
     border: 2px solid black;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     padding: 50px;
     box-sizing: border-box;
     overflow-wrap: break-word;
+     border-radius: 15px;
 }
 
 /* --------- RESPONSIVO --------- */

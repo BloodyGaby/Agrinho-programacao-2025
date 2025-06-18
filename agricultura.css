@@ -21,7 +21,7 @@
   padding:20px;
 }
 .Textoagricultura{
-  padding: 20px;
+  padding: 40px;
   width: 700px;
   height: 400px;
   font-size: 30px;
@@ -34,11 +34,6 @@
   align-items: center;      
   text-align: center;
   margin-bottom: 50px;
-}
-
-.descricaotexto{
-  margin-top: 70px;
-  font-size: 15px;
 }
 
 .alface{
@@ -97,7 +92,7 @@
   margin-right: auto;
   margin-left: 50px;
   width: 600px;
-  height: 750px;
+  height: 660px;
   background-color: #A0CCA0;
   color:rgb(0, 0, 0);
   border: 2px solid black;
@@ -120,13 +115,13 @@
   justify-content: center;  
   align-items: center;      
   text-align: center; 
-  margin-top:-1200px;
+  margin-top:-1113px;
 }
 .TextoAgriculturaParanaense{
   margin-right: 50px;
   margin-left:auto ;
   width: 600px;
-  height: 750px;
+  height: 660px;
   background-color: #A0CCA0;
   color:rgb(0, 0, 0);
   border: 2px solid black;
@@ -138,7 +133,7 @@
 
 .descricaolista{
   font-size: 20px;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 /* --------- RESPONSIVO --------- */
@@ -177,7 +172,6 @@
   }
 
   .descricao3,
-  .descricaotexto,
   .descricaolista {
     font-size: 16px !important;
     margin-top: 20px !important;
