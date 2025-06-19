@@ -155,14 +155,14 @@
     padding: 15px;
     height: auto;
     min-height: auto;
-    /* font-size removido */
+    font-size: 20px;
   }
 
   .descricaopecuaria,
   .descricaopecuaria2,
   .descricaotexto {
     margin-top: 40px;
-    /* font-size removido */
+    font-size: 20px;
   }
 }
 
@@ -178,14 +178,13 @@
   .vaquinhadescricao,
   .pecuariafotodescricao {
     width: 100%;
-    padding: 10px;
-    /* font-size removido */
+    padding: 10px;font-size: 20px;
   }
 
   .descricaopecuaria,
   .descricaopecuaria2,
   .descricaotexto {
     margin-top: 20px;
-    /* font-size removido */
+  font-size: 20px;
   }
 }

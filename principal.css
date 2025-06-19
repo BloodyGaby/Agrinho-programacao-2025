@@ -7,7 +7,7 @@
     font-size: 25px;
     color: #000000;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     margin-top: 100px;
     border: 2px solid black;
     margin-bottom: 50px;
@@ -210,6 +210,10 @@
     .TituloLista2 {
         margin-top: 0 !important;
     }
+
+    .Texto{
+        line-height: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -229,5 +233,9 @@
 
     .TituloLista2 {
         margin-top: 0 !important;
+    }
+
+    .Texto{
+        line-height: 20px;
     }
 }
