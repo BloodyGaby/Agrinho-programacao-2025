@@ -1,129 +1,159 @@
 body {
-  background-color: #4CAF50;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0fff0;
 }
 
-.TituloAgricultura {
-  background-color: #A5D6A7;
-  padding: 10px;
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 60%;
-  margin: 30px auto 20px auto;
-}
-
-.TextoAgricultura {
-  background-color: #C8E6C9;
+.retangulo {
+  background-color: #4CAF50;
+  color: white;
   padding: 20px;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 18px;
-  line-height: 1.6;
-  width: 60%;
-  margin: 0 auto;
-  text-align: justify;
-}
-
-.ImagensAgricultura {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-top: -270px;
-  margin-right: 40px;
-  gap: 30px;
-}
-
-.imagem1, .imagem2 {
   text-align: center;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.imagem1 img, .imagem2 img {
-  width: 250px;
+.banner1 img {
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  display: block;
 }
 
-.descricaoimagem {
-  font-size: 14px;
-  color: #000;
-  margin-top: 5px;
+.descricao3,
+.descricaoalface,
+.descricaoimagem2,
+.descricaolista {
+  font-size: 12px;
+  color: #333;
+  text-align: right;
+  margin: 5px 20px;
 }
 
-.AgriculturaNoBrasil,
-.AgriculturaNoParana {
-  width: 40%;
-  background-color: #C8E6C9;
-  padding: 20px;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 20px;
-}
-
-.TituloAgriculturaBrasil,
+.AgriculturaTitulo,
+.TituloAgriculturaBrasileira,
 .TituloAgriculturaParana {
-  background-color: #A5D6A7;
-  font-size: 20px;
-  font-weight: bold;
   text-align: center;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 40px 20px 10px 20px;
+  margin: 30px 10px 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2E7D32;
 }
 
-.ConteudoAgricultura {
+.Textoagricultura,
+.TextoAgriculturaBrasil,
+.TextoAgriculturaParanaense {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 20px;
+  color: #333;
+}
+
+.alface,
+.Plantaçao {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.botao-quadrado {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin: 30px auto;
+  width: fit-content;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  gap: 8px;
 }
 
-.Fonte {
+.botao-quadrado img.casa {
+  width: 24px;
+  height: 24px;
+}
+
+.rodape {
+  background-color: #1b5e20;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
   font-size: 14px;
+}
+
+.logo-info,
+.Logoinstagram {
+  width: 24px;
+  height: 24px;
+}
+
+.nome-central {
+  flex: 1;
+  text-align: center;
+}
+
+#acessibilidade-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+#opcoes-acessibilidade {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 10px;
 }
 
-/* Responsivo */
-@media (max-width: 900px) {
-  .TituloAgricultura,
-  .TextoAgricultura {
-    width: 90%;
-    font-size: 20px;
-  }
+#opcoes-acessibilidade.mostrar {
+  display: flex;
+}
 
-  .ImagensAgricultura {
-    position: static;
-    align-items: center;
-    margin: 30px 0 0 0;
-  }
+#botao-acessibilidade,
+#opcoes-acessibilidade button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
 
-  .imagem1 img,
-  .imagem2 img {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .AgriculturaNoBrasil,
-  .AgriculturaNoParana {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  .TituloAgriculturaBrasil,
-  .TituloAgriculturaParana {
-    margin: 30px auto 10px auto;
-    width: 90%;
-  }
-
-  .ConteudoAgricultura {
+/* Acessibilidade: responsivo */
+@media (max-width: 768px) {
+  .rodape {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
+  }
+  .botao-quadrado {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .nome-central {
+    text-align: center;
   }
 }
