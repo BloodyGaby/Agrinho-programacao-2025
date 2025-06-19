@@ -30,7 +30,7 @@ body {
   width: 100%;
   height: 600px;
   display: block;
-  object-fit: cover; /* garante melhor ajuste da imagem */
+  object-fit: cover;
 }
 
 .banner1 .descricao {
@@ -46,14 +46,14 @@ body {
   top: 35%;
   right: 0;
   transform: translateY(-50%);
-  background-color: #144d14; /* verde escuro */
+  background-color: #144d14;
   color: white;
   padding: 12px 16px;
   font-weight: bold;
   border: none;
   border-radius: 8px 0 0 8px;
   cursor: pointer;
-  z-index: 1100; /* para ficar acima do VLibras */
+  z-index: 1100;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   user-select: none;
@@ -61,7 +61,7 @@ body {
 }
 
 #botao-acessibilidade:hover {
-  background-color: #2ea32e; /* verde claro no hover */
+  background-color: #2ea32e;
 }
 
 /* Container das opções, inicialmente oculto */
@@ -71,9 +71,9 @@ body {
   gap: 10px;
   position: fixed;
   top: 50%;
-  right: 50px; /* deixa o menu ao lado do botão */
+  right: 50px;
   transform: translateY(-50%);
-  background-color: #144d14; /* verde escuro */
+  background-color: #144d14;
   padding: 12px 16px;
   border-radius: 8px;
   z-index: 1101;
@@ -134,7 +134,7 @@ body {
 }
 
 .botao-quadrado:hover {
-  background-color: #8BBF8B; 
+  background-color: #8BBF8B;
   transform: scale(1.05);
 }
 
@@ -144,13 +144,15 @@ body {
 
 .rodape {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   background-color: #0d2c06;
   font-size: 14px;
   color: #ffffff;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  row-gap: 5px;
 }
 
 .info-link {
@@ -158,7 +160,7 @@ body {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .logo-info {
@@ -171,15 +173,12 @@ body {
   transform: scale(1.1);
 }
 
-.nome-central .autoria-textos {
-  flex-grow: 1; 
-  text-align: center; 
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+.instagram-link {
+  display: flex;
+  align-items: center;
 }
 
-.logoinstagram { 
+.logoinstagram {
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -190,12 +189,16 @@ body {
   transform: scale(1.1);
 }
 
-.instagram-link {
-  display: flex; 
-  align-items: center;
+/* ✅ Estilo corrigido para a ordem dos textos */
+.autoria-textos,
+.nome-central {
+  flex-grow: 1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
-
-
 
 /* Responsividade para tablets e celulares */
 @media (max-width: 1024px) {
@@ -203,6 +206,7 @@ body {
     height: auto;
     max-height: 400px;
   }
+
   .botao-quadrado {
     padding: 10px 16px;
     font-size: 14px;
@@ -219,23 +223,24 @@ body {
   .info-link,
   .instagram-link {
     justify-content: center;
-    width: 100%; 
+    width: 100%;
   }
 
-  .logo-info { 
+  .logo-info {
     width: 18px;
     height: 18px;
   }
+
   .logoinstagram {
     width: 20px;
     height: 20px;
   }
-  .nome-central .autoria-textos {
-    order: 2; 
-    margin-top: 5px; 
-    margin-bottom: 5px;
-    white-space: normal; 
-    text-overflow: clip; 
+
+  .autoria-textos,
+  .nome-central {
+    order: initial;
+    white-space: normal;
+    text-overflow: clip;
   }
 
   #botao-acessibilidade {
@@ -254,6 +259,7 @@ body {
     padding: 10px 15px;
     font-size: 12px;
   }
+
   #botao-acessibilidade {
     padding: 18px 20px;
     font-size: 13px;
