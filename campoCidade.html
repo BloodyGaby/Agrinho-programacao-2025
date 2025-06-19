@@ -98,123 +98,107 @@ com políticas e leis para a preservação do meio ambiente, além de comprar as
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
-      <script>
+  <script>
+  // Desaparecer com o retângulo/banner ao rolar
+  const retangulo = document.querySelector(".retangulo");
+  const banner1 = document.querySelector(".banner1");
 
-const retangulo = document.querySelector(".retangulo");
-const banner1 = document.querySelector(".banner1");
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const fadeMax = 300;
+    const opacity = 1 - Math.min(scrollY / fadeMax, 1);
 
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  const fadeMax = 300;
-  const opacity = 1 - Math.min(scrollY / fadeMax, 1);
+    if (retangulo) retangulo.style.opacity = opacity;
+    if (banner1) banner1.style.opacity = opacity;
+  });
 
-  if (retangulo) retangulo.style.opacity = opacity;
-  if (banner1) banner1.style.opacity = opacity;
-});
+  // Alternar botão de acessibilidade
+  document.getElementById('botao-acessibilidade').addEventListener('click', function () {
+    const opcoes = document.getElementById('opcoes-acessibilidade');
+    opcoes.classList.toggle('mostrar');
+  });
 
+  // Acessibilidade: controle de fonte
+  let aumentoCount = 0;
+  let diminuicaoCount = 0;
+  const limiteMaximo = 2;
 
-document.getElementById('botao-acessibilidade').addEventListener('click', function () {
-  const opcoes = document.getElementById('opcoes-acessibilidade');
-  opcoes.classList.toggle('mostrar');
-});
+  function ajustarFonte(delta) {
+    const elementos = document.querySelectorAll('.Texto, .titulolista, .tituloLista1, .lista1, .TituloLista2, .Lista2, .descricaotexto, .retangulo');
 
+    elementos.forEach(el => {
+      const estilo = window.getComputedStyle(el);
+      const tamanhoAtual = parseFloat(estilo.fontSize);
+      const novoTamanho = tamanhoAtual + delta;
 
+      if (novoTamanho >= 12 && novoTamanho <= 40) {
+        el.style.fontSize = `${novoTamanho}px`;
 
-let aumentoCount = 0;
-let diminuicaoCount = 0;
-const limiteMaximo = 2;
+        // Responsivo: altura automática, evita estouro
+        el.style.height = 'auto';
+        el.style.overflowWrap = 'break-word';
+        el.style.wordBreak = 'break-word';
+      }
+    });
+  }
 
-function ajustarFonte(delta) {
-  const elementos = document.querySelectorAll('p, h1, h2, h3, h4, h5, span, li, a, div');
-  elementos.forEach(el => {
-    const estilo = window.getComputedStyle(el);
-    const tamanhoAtual = parseFloat(estilo.fontSize);
-    const novoTamanho = tamanhoAtual + delta;
-
-    if (novoTamanho >= 8) {
-      el.style.fontSize = `${novoTamanho}px`;
-
-      const paddingTop = parseFloat(estilo.paddingTop) || 0;
-      const paddingBottom = parseFloat(estilo.paddingBottom) || 0;
-
-      el.style.paddingTop = `${paddingTop + (delta > 0 ? 1 : -1)}px`;
-      el.style.paddingBottom = `${paddingBottom + (delta > 0 ? 1 : -1)}px`;
+  document.getElementById('aumentar-fonte').addEventListener('click', () => {
+    if (aumentoCount < limiteMaximo) {
+      ajustarFonte(2);
+      aumentoCount++;
+      diminuicaoCount = Math.max(0, diminuicaoCount - 1);
     }
   });
-}
 
-document.getElementById('aumentar-fonte').addEventListener('click', () => {
-  if (aumentoCount < limiteMaximo) {
-    ajustarFonte(2);
-    aumentoCount++;
-    diminuicaoCount = Math.max(0, diminuicaoCount - 1);
-  }
-});
+  document.getElementById('diminuir-fonte').addEventListener('click', () => {
+    if (diminuicaoCount < limiteMaximo) {
+      ajustarFonte(-2);
+      diminuicaoCount++;
+      aumentoCount = Math.max(0, aumentoCount - 1);
+    }
+  });
 
-document.getElementById('diminuir-fonte').addEventListener('click', () => {
-  if (diminuicaoCount < limiteMaximo) {
-    ajustarFonte(-2);
-    diminuicaoCount++;
-    aumentoCount = Math.max(0, aumentoCount - 1);
-  }
-});
+  // Leitor de texto com voz feminina
+  document.getElementById('ler-texto').addEventListener('click', () => {
+    const texto = document.body.innerText;
+    const utterance = new SpeechSynthesisUtterance(texto);
 
+    function escolherVoz() {
+      const vozes = speechSynthesis.getVoices();
+      let vozFeminina = vozes.find(voz =>
+        voz.lang.toLowerCase().startsWith('pt-br') &&
+        (
+          voz.name.toLowerCase().includes('feminina') ||
+          voz.name.toLowerCase().includes('luciana') ||
+          voz.name.toLowerCase().includes('fernanda') ||
+          voz.name.toLowerCase().includes('google português') ||
+          voz.name.toLowerCase().includes('brasil')
+        )
+      ) || vozes.find(voz =>
+        voz.lang.toLowerCase().startsWith('pt-br') && voz.name.toLowerCase().includes('female')
+      ) || vozes.find(voz =>
+        voz.lang.toLowerCase().startsWith('pt-br')
+      );
 
+      if (vozFeminina) utterance.voice = vozFeminina;
+      utterance.lang = 'pt-BR';
 
-document.getElementById('alterna-contraste')?.addEventListener('click', () => {
-  const body = document.body;
-  const atual = getComputedStyle(body).backgroundColor;
-  if (atual === 'rgb(0, 0, 0)' || atual === 'black') {
-    body.style.backgroundColor = '#ffffff';
-    body.style.color = '#000000';
-  } else {
-    body.style.backgroundColor = 'black';
-    body.style.color = '#ffffff';
-  }
-});
+      speechSynthesis.cancel();
+      speechSynthesis.speak(utterance);
+    }
 
+    if (speechSynthesis.getVoices().length === 0) {
+      speechSynthesis.addEventListener('voiceschanged', escolherVoz, { once: true });
+    } else {
+      escolherVoz();
+    }
+  });
 
-
-document.getElementById('ler-texto').addEventListener('click', () => {
-  const texto = document.body.innerText;
-  const utterance = new SpeechSynthesisUtterance(texto);
-
-  function escolherVoz() {
-    const vozes = speechSynthesis.getVoices();
-    let vozFeminina = vozes.find(voz =>
-      voz.lang.toLowerCase().startsWith('pt-br') &&
-      (
-        voz.name.toLowerCase().includes('feminina') ||
-        voz.name.toLowerCase().includes('luciana') ||
-        voz.name.toLowerCase().includes('fernanda') ||
-        voz.name.toLowerCase().includes('google português') ||
-        voz.name.toLowerCase().includes('brasil')
-      )
-    ) || vozes.find(voz =>
-      voz.lang.toLowerCase().startsWith('pt-br') && voz.name.toLowerCase().includes('female')
-    ) || vozes.find(voz =>
-      voz.lang.toLowerCase().startsWith('pt-br')
-    );
-
-    if (vozFeminina) utterance.voice = vozFeminina;
-    utterance.lang = 'pt-BR';
-
-    speechSynthesis.cancel();
-    speechSynthesis.speak(utterance);
-  }
-
-  if (speechSynthesis.getVoices().length === 0) {
-    speechSynthesis.addEventListener('voiceschanged', escolherVoz, { once: true });
-  } else {
-    escolherVoz();
-  }
-});
-
-
-document.querySelector('.instagram')?.addEventListener('click', function () {
-  const link = this.getAttribute('data-link') || this.getAttribute('href') || this.src;
-  if (link) window.open(link, '_blank');
-});
+  // Instagram abrir em nova aba
+  document.querySelector('.instagram')?.addEventListener('click', function () {
+    const link = this.getAttribute('data-link') || this.getAttribute('href') || this.src;
+    if (link) window.open(link, '_blank');
+  });
 </script>
 </body>
 </html>

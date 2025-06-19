@@ -39,32 +39,59 @@ Os prêmios são entregues de acordo com o ano escolar (que pode variar entre o 
   <h2>Informativo educacional</h2>
 </div>
 
-<div class="festejando">
-  <h2><a href="Festejando.html">Festejando a conexão campo-cidade</a></h2>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
 
-<div class="campocidade">
-  <h2><a href="campoCidade.html">Relação Campo-Cidade</a></h2>
-</div>
+  <div id="blur"></div>
 
-<div class="agricultura">
-  <h2><a href="agricultura.html">Agricultura</a></li></h2>
-</div>
+  <div class="container-blocos">
 
-<div class="pecuaria">
-  <h2><a href="pecuaria.html">Pecuária</a></h2>
-</div>
+    <div class="blocoTema">
+      <h2><a href="Festejando.html">Festejando a conexão campo-cidade</a></h2>
+      <div class="curiosidade" data-info="Festejando a conexão, qual é o objetivo? O que envolve? Como funciona?"></div>
+    </div>
 
-<div class="desafios">
-  <h2><a href="dsf.html">Desafios e Soluções Sustentáveis</a></h2>
-</div>
+    <div class="blocoTema">
+      <h2><a href="campoCidade.html">Relação Campo-Cidade</a></h2>
+      <div class="curiosidade" data-info="Os principais tópicos da conexão campo-cidade."></div>
+    </div>
+
+    <div class="blocoTema">
+      <h2><a href="agricultura.html">Agricultura</a></h2>
+      <div class="curiosidade" data-info="Como a agricultura é desenvolvida pelo País? e no Paraná? Qual é a importância?"></div>
+    </div>
+
+    <div class="blocoTema">
+      <h2><a href="pecuaria.html">Pecuária</a></h2>
+      <div class="curiosidade" data-info="Como é a Pecuária ? e no Brasil, como funciona? e no Paraná? Quais são as princiais produções?"></div>
+    </div>
+
+    <div class="blocoTema">
+      <h2><a href="dsf.html">Desafios e Soluções Sustentáveis</a></h2>
+      <div class="curiosidade" data-info="Quais são os desáfios? Há solução? Quais são as Soluções?"></div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
+
+
   <div class="TituloLista2">
     <h2>Projetos agrinho</h2>
   </div>
-  <div class="Lista2">
-    <h2><a href="redação.html">Redação Agrinho</a></h2>
-    
-  </div>
+  <div class="Lista2 blocoTema">
+  <h2><a href="redação.html">Redação Agrinho</a></h2>
+  <div class="curiosidade" data-info="As melhores redações do projeto agrinho da turma do 3C, 2025."></div>
+</div>
+
    
   <footer class="rodape">
     <a href="info.html" class="info-link">
@@ -159,19 +186,6 @@ Os prêmios são entregues de acordo com o ano escolar (que pode variar entre o 
     }
   });
 
-  // Contraste: alternar fundo branco/preto
-  document.getElementById('alterna-contraste')?.addEventListener('click', () => {
-    const body = document.body;
-    const atual = getComputedStyle(body).backgroundColor;
-    if (atual === 'rgb(0, 0, 0)' || atual === 'black') {
-      body.style.backgroundColor = '#ffffff';
-      body.style.color = '#000000';
-    } else {
-      body.style.backgroundColor = 'black';
-      body.style.color = '#ffffff';
-    }
-  });
-
   // Leitor de texto com voz feminina
   document.getElementById('ler-texto').addEventListener('click', () => {
     const texto = document.body.innerText;
@@ -214,6 +228,42 @@ Os prêmios são entregues de acordo com o ano escolar (que pode variar entre o 
     if (link) window.open(link, '_blank');
   });
 </script>
+
+<script>
+ document.querySelectorAll(".blocoTema").forEach(bloco => {
+  const curiosidade = bloco.querySelector(".curiosidade");
+  const texto = curiosidade.dataset.info;
+
+  bloco.addEventListener("mouseover", () => {
+    document.getElementById("blur").style.opacity = "1";
+    curiosidade.innerHTML = '<span class="curiosidade-digitando"></span>';
+    curiosidade.style.opacity = "1";
+    curiosidade.style.pointerEvents = "auto";
+
+    const span = curiosidade.querySelector(".curiosidade-digitando");
+    let index = 0;
+
+    const interval = setInterval(() => {
+      if (index < texto.length) {
+        span.textContent += texto.charAt(index);
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 30); // Velocidade do efeito digitando
+  });
+
+  bloco.addEventListener("mouseout", () => {
+    document.getElementById("blur").style.opacity = "0";
+    curiosidade.innerHTML = "";
+    curiosidade.style.opacity = "0";
+    curiosidade.style.pointerEvents = "none";
+  });
+});
+
+
+</script>
+
 
   </body>
 </html>
