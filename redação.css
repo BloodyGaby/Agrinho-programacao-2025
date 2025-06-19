@@ -121,21 +121,21 @@
   .redacao1,
   .redacao2,
   .redacao3 {
-    width: 90% !important;
-    min-height: auto !important;
-    height: auto !important;
-    font-size: 22px !important;
-    padding: 20px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 90% ;
+    min-height: auto ;
+    height: auto ;
+    font-size: 22px ;
+    padding: 20px ;
+    margin-left: auto ;
+    margin-right: auto ;
   }
 
   .descricao0,
   .descricao1,
   .descricao2,
   .descricao3 {
-    font-size: 16px !important;
-    margin-top: 40px !important;
+    font-size: 16px ;
+    margin-top: 40px ;
   }
 }
 
@@ -145,16 +145,16 @@
   .redacao1,
   .redacao2,
   .redacao3 {
-    width: 100% !important;
-    font-size: 18px !important;
-    padding: 10px !important;
+    width: 100% ;
+    font-size: 18px ;
+    padding: 10px ;
   }
 
   .descricao0,
   .descricao1,
   .descricao2,
   .descricao3 {
-    font-size: 14px !important;
-    margin-top: 30px !important;
+    font-size: 14px ;
+    margin-top: 30px ;
   }
 }
