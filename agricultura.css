@@ -161,14 +161,14 @@
     padding: 15px;
     height: auto;
     min-height: auto;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .descricao3,
   .descricaolista {
     margin-top: 40px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -185,13 +185,13 @@
   .descricaoimagem2 {
     width: 100%;
     padding: 10px;
-   font-size: 20px;
+   font-size: 15px;
   }
 
   .descricao3,
   .descricaolista {
     margin-top: 20px;
     text-align: center;
-    font-size: 20px;
+   font-size: 15px;
   }
 }
