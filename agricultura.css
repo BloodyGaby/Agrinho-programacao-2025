@@ -156,19 +156,19 @@
   .Plantação,
   .descricaoalface,
   .descricaoimagem2 {
-    width: 90% ;
-    margin: 20px auto ;
-    font-size: 18px ;
-    padding: 15px ;
-    height: auto ;
-    min-height: auto ;
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    height: auto;
+    min-height: auto;
+    /* font-size removido */
   }
 
   .descricao3,
   .descricaolista {
-    font-size: 16px ;
-    margin-top: 40px ;
+    margin-top: 40px;
     text-align: center;
+    /* font-size removido */
   }
 }
 
@@ -183,15 +183,15 @@
   .Plantação,
   .descricaoalface,
   .descricaoimagem2 {
-    width: 100% ;
-    font-size: 16px ;
-    padding: 10px ;
+    width: 100%;
+    padding: 10px;
+    /* font-size removido */
   }
 
   .descricao3,
   .descricaolista {
-    font-size: 14px ;
-    margin-top: 20px ;
+    margin-top: 20px;
     text-align: center;
+    /* font-size removido */
   }
 }

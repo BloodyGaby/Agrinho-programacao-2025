@@ -150,19 +150,19 @@
   .pecuariafoto,
   .vaquinhadescricao,
   .pecuariafotodescricao {
-    width: 90% ;
-    margin: 20px auto ;
-    font-size: 18px ;
-    padding: 15px ;
-    height: auto ;
-    min-height: auto ;
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    height: auto;
+    min-height: auto;
+    /* font-size removido */
   }
 
   .descricaopecuaria,
   .descricaopecuaria2,
   .descricaotexto {
-    font-size: 16px ;
-    margin-top: 40px ;
+    margin-top: 40px;
+    /* font-size removido */
   }
 }
 
@@ -177,15 +177,15 @@
   .pecuariafoto,
   .vaquinhadescricao,
   .pecuariafotodescricao {
-    width: 100% ;
-    font-size: 16px ;
-    padding: 10px ;
+    width: 100%;
+    padding: 10px;
+    /* font-size removido */
   }
 
   .descricaopecuaria,
   .descricaopecuaria2,
   .descricaotexto {
-    font-size: 14px ;
-    margin-top: 20px ;
+    margin-top: 20px;
+    /* font-size removido */
   }
 }
