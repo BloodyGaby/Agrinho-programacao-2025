@@ -81,16 +81,7 @@
   box-sizing: border-box;
 }
 
-.descricao {
-  width: 500px;
-  max-width: 95%;
-  height: 50px;
-  background-color: #A0CCA0;
-  border: 2px solid black;
-  font-size: 15px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-}
+
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
@@ -121,9 +112,5 @@
     padding: 15px;
     flex-direction: column;
     font-size: 18px;
-  }
-  .descricao {
-    width: 90%;
-    height: auto;
   }
 }
