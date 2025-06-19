@@ -189,15 +189,10 @@ body {
   transform: scale(1.1);
 }
 
-/* ✅ Estilo corrigido para a ordem dos textos */
-.autoria-textos,
-.nome-central {
-  flex-grow: 1;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
+.rodapetexto{
+  display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 /* Responsividade para tablets e celulares */
@@ -236,12 +231,6 @@ body {
     height: 20px;
   }
 
-  .autoria-textos,
-  .nome-central {
-    order: initial;
-    white-space: normal;
-    text-overflow: clip;
-  }
 
   #botao-acessibilidade {
     padding: 14px 18px;
