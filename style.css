@@ -193,6 +193,7 @@ body {
   display: flex;
 flex-direction: column;
 justify-content: center;
+text-align: center;
 }
 
 /* Responsividade para tablets e celulares */
