@@ -263,6 +263,7 @@
   }
    .lavoura,
   .trator{
+    margin-top:200px;
     height: auto;
     margin-left: 10px;  /* mantém alinhado à esquerda */
     margin-right: auto;
