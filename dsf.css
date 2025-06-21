@@ -81,7 +81,16 @@
   box-sizing: border-box;
 }
 
-
+.descricao {
+  width: 500px;
+  max-width: 95%;
+  height: 50px;
+  background-color: #A0CCA0;
+  border: 2px solid black;
+  font-size: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
@@ -89,26 +98,22 @@
     font-size: 24px;
     height: auto;
     padding: 20px;
-      border-radius: 15px;
   }
   .topicodsf {
     height: auto;
     font-size: 16px;
-      border-radius: 15px;
   }
   .Listadsf {
     height: auto;
     font-size: 14px;
     flex-direction: column;
     padding: 15px;
-      border-radius: 15px;
   }
   .solucoes {
     width: 90%;
     height: auto;
     font-size: 18px;
     padding: 15px;
-      border-radius: 15px;
   }
   .solucoeslista {
     width: 90%;
@@ -116,6 +121,9 @@
     padding: 15px;
     flex-direction: column;
     font-size: 18px;
-    border-radius: 15px;
+  }
+  .descricao {
+    width: 90%;
+    height: auto;
   }
 }

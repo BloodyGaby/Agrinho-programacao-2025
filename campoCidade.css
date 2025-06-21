@@ -198,8 +198,6 @@
 @media (max-width: 1024px) {
   .campoCidadeTitulo1,
   .textoCampo,
-  .lavoura,
-  .trator,
   .ajudaTexto,
   .urbanoTexto,
   .texto1Urbano,
@@ -209,15 +207,29 @@
     margin-left: 10px;  /* ajuste para alinhar à esquerda */
     margin-right: auto;
   }
-  .lavoura {
-    margin-top: 0;
+    .lavoura,
+  .trator{
     height: auto;
-    flex-direction: column;
+    margin-left: 10px;  /* mantém alinhado à esquerda */
+    margin-right: auto;
   }
-  .trator {
-    margin-top: 0;
-    height: auto;
-    flex-direction: column;
+
+  
+  .descricao4{
+     font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .descricao3{
+      font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .descricao2{
+          font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   }
   .ruraltexto,
   .texto1rural {
@@ -226,13 +238,10 @@
   .texto1Urbano {
     margin-bottom: 100px;
   }
-}
+
 
 @media (max-width: 600px) {
-  .campoCidadeTitulo1,
   .textoCampo,
-  .lavoura,
-  .trator,
   .ajudaTexto,
   .urbanoTexto,
   .texto1Urbano,
@@ -243,15 +252,39 @@
     padding: 10px;
     margin-left: 10px;  /* mantém alinhado à esquerda */
     margin-right: auto;
-  }
-  .descricao,
-  .descricao2,
-  .descricao3,
-  .descricao4 {
-    font-size: 16px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
+  .campoCidadeTitulo1{
+    font-size: 15px;
+    height: auto;
+    margin-top: 10px;
+
+  }
+   .lavoura,
+  .trator{
+    height: auto;
+    margin-left: 10px;  /* mantém alinhado à esquerda */
+    margin-right: auto;
+  }
+
+  
+  .descricao4{
+     font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .descricao3{
+      font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .descricao2{
+          font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .urbanoTexto,
   .ruraltexto {
     font-size: 22px;

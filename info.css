@@ -76,7 +76,7 @@
 
 /* ----------- RESPONSIVO ----------- */
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
   .sobremimTexto,
   .projeto,
   .dificuldades,
@@ -84,43 +84,36 @@
   .DesenvolvimentoTexto,
   .NotasfinaisTexto,
   .referenciaslinks {
-    width: 90% ;
-    font-size: 18px ;
-    padding: 20px ;
-    line-height: 1.6em ;
+    width: 90%;
+    font-size: 18px;
+    padding: 20px;
+    line-height: 1.6em;
+    border-radius: 15px;
   }
 
-    
-    .sobreMim,
-    .tituloSobreoProjeto,
-    .TituloDificuldades,
-    .desenvolvimento
-    .Notasfinais,
-    .ReferenciaTitulo
-    .agradecimento
-    {
-    margin-top: 100px;
-   height: auto;
-   margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  min-height: 150px;
-  background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 50px;
-  border: 2px solid black;
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-   border-radius: 15px;
-
-    }
+  .sobreMim,
+  .tituloSobreoProjeto,
+  .TituloDificuldades,
+  .desenvolvimento,
+  .Notasfinais,
+  .ReferenciaTitulo,
+  .agradecimento {
+    margin: 50px auto;
+    width: 90%;
+    min-height: 150px;
+    height: auto;
+    background-color: #A0CCA0;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    line-height: 50px;
+    padding: 50px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    border-radius: 15px;
+  }
 }
-
 
 @media (max-width: 480px) {
   .sobremimTexto,
@@ -130,38 +123,33 @@
   .DesenvolvimentoTexto,
   .NotasfinaisTexto,
   .referenciaslinks {
-    width: 100% ;
-    font-size: 16px ;
-    padding: 15px ;
-    line-height: 1.4em ;
+    width: 90%;
+    font-size: 16px;
+    padding: 15px;
+    line-height: 1.4em;
     border-radius: 15px;
   }
-   .sobreMim,
-    .tituloSobreoProjeto,
-    .TituloDificuldades,
-    .desenvolvimento
-    .Notasfinais,
-    .ReferenciaTitulo
-    .agradecimento
-    {
-    margin-top: 100px;
-   height: auto;
-   margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  min-height: 150px;
-  background-color: #A0CCA0;
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-  line-height: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 50px;
-  border: 2px solid black;
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-   border-radius: 15px;
 
-    }
+  .sobreMim,
+  .tituloSobreoProjeto,
+  .TituloDificuldades,
+  .desenvolvimento,
+  .Notasfinais,
+  .ReferenciaTitulo,
+  .agradecimento {
+    margin: 50px auto;
+    width: 90%;
+    min-height: 150px;
+    height: auto;
+    background-color: #A0CCA0;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    line-height: 45px;
+    padding: 30px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    border-radius: 15px;
+  }
 }

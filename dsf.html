@@ -48,24 +48,26 @@
         </ul>
      
     </div>
+    <div class="descricao">
+      <h2>fonte Textos: Gabrielly Drosda da Silva</h2>
+    </div>
      <a href="index.html" class="botao-quadrado">
    <img class="casa" src="img/iconcasa.png"/>
     <span>Voltar ao início</span>
   </a>
   
-  <footer class="rodape">
-  <a href="info.html" class="info-link">
-    <img class="logo-info" src="img/Icon_Information.svg.png" alt="Informações"/>
-  </a>
-  <div class="rodapetexto">
+   <footer class="rodape">
+    <a href="info.html" class="info-link">
+        <img class="logo-info" src="img/Icon_Information.svg.png" alt="Informações"/>
+    </a>
 
-  <span class="autoria-textos">Todo o conteúdo é de autoria de Gabrielly Drosda da Silva © 2025</span>
+    <span class="nome-central">Desenvolvido por: Gabrielly Drosda da Silva</span>
 
-</div>
-  <a href="https://www.instagram.com/_just_gaby_0/" target="_blank" class="instagram-link">
-    <img class="Logoinstagram" src="img/instagram.png" alt="Instagram" />
-  </a>
-</footer>
+    <a href="https://www.instagram.com/_just_gaby_0/" target="_blank" class="instagram-link">
+        <img class="Logoinstagram" src="img/instagram.png" alt="Instagram" />
+    </a>
+
+   </footer>
 
    
 <div id="acessibilidade-container">
@@ -89,107 +91,124 @@
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
- <script>
-  // Desaparecer com o retângulo/banner ao rolar
-  const retangulo = document.querySelector(".retangulo");
-  const banner1 = document.querySelector(".banner1");
 
-  window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-    const fadeMax = 300;
-    const opacity = 1 - Math.min(scrollY / fadeMax, 1);
+      <script>
 
-    if (retangulo) retangulo.style.opacity = opacity;
-    if (banner1) banner1.style.opacity = opacity;
+const retangulo = document.querySelector(".retangulo");
+const banner1 = document.querySelector(".banner1");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const fadeMax = 300;
+  const opacity = 1 - Math.min(scrollY / fadeMax, 1);
+
+  if (retangulo) retangulo.style.opacity = opacity;
+  if (banner1) banner1.style.opacity = opacity;
+});
+
+
+document.getElementById('botao-acessibilidade').addEventListener('click', function () {
+  const opcoes = document.getElementById('opcoes-acessibilidade');
+  opcoes.classList.toggle('mostrar');
+});
+
+
+
+let aumentoCount = 0;
+let diminuicaoCount = 0;
+const limiteMaximo = 2;
+
+function ajustarFonte(delta) {
+  const elementos = document.querySelectorAll('p, h1, h2, h3, h4, h5, span, li, a, div');
+  elementos.forEach(el => {
+    const estilo = window.getComputedStyle(el);
+    const tamanhoAtual = parseFloat(estilo.fontSize);
+    const novoTamanho = tamanhoAtual + delta;
+
+    if (novoTamanho >= 8) {
+      el.style.fontSize = `${novoTamanho}px`;
+
+      const paddingTop = parseFloat(estilo.paddingTop) || 0;
+      const paddingBottom = parseFloat(estilo.paddingBottom) || 0;
+
+      el.style.paddingTop = `${paddingTop + (delta > 0 ? 1 : -1)}px`;
+      el.style.paddingBottom = `${paddingBottom + (delta > 0 ? 1 : -1)}px`;
+    }
   });
+}
 
-  // Alternar botão de acessibilidade
-  document.getElementById('botao-acessibilidade').addEventListener('click', function () {
-    const opcoes = document.getElementById('opcoes-acessibilidade');
-    opcoes.classList.toggle('mostrar');
-  });
+document.getElementById('aumentar-fonte').addEventListener('click', () => {
+  if (aumentoCount < limiteMaximo) {
+    ajustarFonte(2);
+    aumentoCount++;
+    diminuicaoCount = Math.max(0, diminuicaoCount - 1);
+  }
+});
 
-  // Acessibilidade: controle de fonte
-  let aumentoCount = 0;
-  let diminuicaoCount = 0;
-  const limiteMaximo = 2;
+document.getElementById('diminuir-fonte').addEventListener('click', () => {
+  if (diminuicaoCount < limiteMaximo) {
+    ajustarFonte(-2);
+    diminuicaoCount++;
+    aumentoCount = Math.max(0, aumentoCount - 1);
+  }
+});
 
-  function ajustarFonte(delta) {
-    const elementos = document.querySelectorAll('.texto7, .topicodsf, .Listadsf, .solucoes, .solucoeslista');
 
-    elementos.forEach(el => {
-      const estilo = window.getComputedStyle(el);
-      const tamanhoAtual = parseFloat(estilo.fontSize);
-      const novoTamanho = tamanhoAtual + delta;
 
-      if (novoTamanho >= 12 && novoTamanho <= 40) {
-        el.style.fontSize = `${novoTamanho}px`;
+document.getElementById('alterna-contraste')?.addEventListener('click', () => {
+  const body = document.body;
+  const atual = getComputedStyle(body).backgroundColor;
+  if (atual === 'rgb(0, 0, 0)' || atual === 'black') {
+    body.style.backgroundColor = '#ffffff';
+    body.style.color = '#000000';
+  } else {
+    body.style.backgroundColor = 'black';
+    body.style.color = '#ffffff';
+  }
+});
 
-        // Responsivo: altura automática, evita estouro
-        el.style.height = 'auto';
-        el.style.overflowWrap = 'break-word';
-        el.style.wordBreak = 'break-word';
-      }
-    });
+
+
+document.getElementById('ler-texto').addEventListener('click', () => {
+  const texto = document.body.innerText;
+  const utterance = new SpeechSynthesisUtterance(texto);
+
+  function escolherVoz() {
+    const vozes = speechSynthesis.getVoices();
+    let vozFeminina = vozes.find(voz =>
+      voz.lang.toLowerCase().startsWith('pt-br') &&
+      (
+        voz.name.toLowerCase().includes('feminina') ||
+        voz.name.toLowerCase().includes('luciana') ||
+        voz.name.toLowerCase().includes('fernanda') ||
+        voz.name.toLowerCase().includes('google português') ||
+        voz.name.toLowerCase().includes('brasil')
+      )
+    ) || vozes.find(voz =>
+      voz.lang.toLowerCase().startsWith('pt-br') && voz.name.toLowerCase().includes('female')
+    ) || vozes.find(voz =>
+      voz.lang.toLowerCase().startsWith('pt-br')
+    );
+
+    if (vozFeminina) utterance.voice = vozFeminina;
+    utterance.lang = 'pt-BR';
+
+    speechSynthesis.cancel();
+    speechSynthesis.speak(utterance);
   }
 
-  document.getElementById('aumentar-fonte').addEventListener('click', () => {
-    if (aumentoCount < limiteMaximo) {
-      ajustarFonte(2);
-      aumentoCount++;
-      diminuicaoCount = Math.max(0, diminuicaoCount - 1);
-    }
-  });
+  if (speechSynthesis.getVoices().length === 0) {
+    speechSynthesis.addEventListener('voiceschanged', escolherVoz, { once: true });
+  } else {
+    escolherVoz();
+  }
+});
 
-  document.getElementById('diminuir-fonte').addEventListener('click', () => {
-    if (diminuicaoCount < limiteMaximo) {
-      ajustarFonte(-2);
-      diminuicaoCount++;
-      aumentoCount = Math.max(0, aumentoCount - 1);
-    }
-  });
 
-  // Leitor de texto com voz feminina
-  document.getElementById('ler-texto').addEventListener('click', () => {
-    const texto = document.body.innerText;
-    const utterance = new SpeechSynthesisUtterance(texto);
-
-    function escolherVoz() {
-      const vozes = speechSynthesis.getVoices();
-      let vozFeminina = vozes.find(voz =>
-        voz.lang.toLowerCase().startsWith('pt-br') &&
-        (
-          voz.name.toLowerCase().includes('feminina') ||
-          voz.name.toLowerCase().includes('luciana') ||
-          voz.name.toLowerCase().includes('fernanda') ||
-          voz.name.toLowerCase().includes('google português') ||
-          voz.name.toLowerCase().includes('brasil')
-        )
-      ) || vozes.find(voz =>
-        voz.lang.toLowerCase().startsWith('pt-br') && voz.name.toLowerCase().includes('female')
-      ) || vozes.find(voz =>
-        voz.lang.toLowerCase().startsWith('pt-br')
-      );
-
-      if (vozFeminina) utterance.voice = vozFeminina;
-      utterance.lang = 'pt-BR';
-
-      speechSynthesis.cancel();
-      speechSynthesis.speak(utterance);
-    }
-
-    if (speechSynthesis.getVoices().length === 0) {
-      speechSynthesis.addEventListener('voiceschanged', escolherVoz, { once: true });
-    } else {
-      escolherVoz();
-    }
-  });
-
-  // Instagram abrir em nova aba
-  document.querySelector('.instagram')?.addEventListener('click', function () {
-    const link = this.getAttribute('data-link') || this.getAttribute('href') || this.src;
-    if (link) window.open(link, '_blank');
-  });
+document.querySelector('.instagram')?.addEventListener('click', function () {
+  const link = this.getAttribute('data-link') || this.getAttribute('href') || this.src;
+  if (link) window.open(link, '_blank');
+});
 </script>
 
 </body>

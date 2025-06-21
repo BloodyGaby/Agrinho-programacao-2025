@@ -32,10 +32,6 @@
    border-radius: 15px;
 }
 
-.descricaotexto {
-  font-size: 20px;
-  margin-top: 130px;
-}
 
 .vaquinha {
   margin: -900px 50px 500px 860px;
@@ -146,21 +142,25 @@
   .TextopecuariaParanaense,
   .titulopecuariaBrasil,
   .tituloPecuariaParaná,
-  .vaquinha,
-  .pecuariafoto,
   .vaquinhadescricao,
   .pecuariafotodescricao {
-    width: 90%;
     margin: 20px auto;
     padding: 15px;
     height: auto;
     min-height: auto;
   font-size: 15px;
   }
+  .vaquinha,
+  .pecuariafoto{
+    width: 90%;
+     margin: 20px auto;
+        height: auto;
+    min-height: auto;
+
+  }
 
   .descricaopecuaria,
-  .descricaopecuaria2,
-  .descricaotexto {
+  .descricaopecuaria2 {
     margin-top: 40px;
    font-size: 15px;
   }
@@ -173,18 +173,19 @@
   .TextopecuariaParanaense,
   .titulopecuariaBrasil,
   .tituloPecuariaParaná,
-  .vaquinha,
-  .pecuariafoto,
   .vaquinhadescricao,
   .pecuariafotodescricao {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     font-size: 15px;
   }
+  .pecuariafoto,
+  .vaquinha{
+     width: 90%;
+  }
 
   .descricaopecuaria,
-  .descricaopecuaria2,
-  .descricaotexto {
+  .descricaopecuaria2 {
     margin-top: 20px;
  font-size: 15px;
   }

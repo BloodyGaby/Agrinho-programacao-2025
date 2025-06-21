@@ -152,8 +152,6 @@
   .TextoAgriculturaParanaense,
   .TituloAgriculturaBrasileira,
   .TituloAgriculturaParana,
-  .alface,
-  .Plantação,
   .descricaoalface,
   .descricaoimagem2 {
     width: 90%;
@@ -163,6 +161,15 @@
     min-height: auto;
     font-size: 15px;
   }
+  .alface,
+  .Plantação{
+      width: 90%;
+    margin: 20px auto;
+    height: auto;
+    min-height: auto;
+
+  }
+
 
   .descricao3,
   .descricaolista {
@@ -179,15 +186,21 @@
   .TextoAgriculturaParanaense,
   .TituloAgriculturaBrasileira,
   .TituloAgriculturaParana,
-  .alface,
-  .Plantação,
   .descricaoalface,
   .descricaoimagem2 {
-    width: 100%;
+    width: 90%;
     padding: 10px;
    font-size: 15px;
   }
 
+   .alface,
+  .Plantação{
+      width: 90%;
+    margin: 20px auto;
+    height: auto;
+    min-height: auto;
+
+  }
   .descricao3,
   .descricaolista {
     margin-top: 20px;
