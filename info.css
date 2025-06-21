@@ -75,7 +75,8 @@
 }
 
 /* ----------- RESPONSIVO ----------- */
-@media (max-width: 900px) {
+
+  @media (max-width: 900px) {
   .sobremimTexto,
   .projeto,
   .dificuldades,
@@ -89,7 +90,7 @@
     line-height: 1.6em ;
   }
 
-  @media (max-width: 900px) {
+    
     .sobreMim,
     .tituloSobreoProjeto,
     .TituloDificuldades,
@@ -122,13 +123,6 @@
 
 
 @media (max-width: 480px) {
-  .sobreMim,
-  .tituloSobreoProjeto,
-  .TituloDificuldades,
-  .desenvolvimento,
-  .Notasfinais,
-  .ReferenciaTitulo,
-  .agradecimento,
   .sobremimTexto,
   .projeto,
   .dificuldades,
@@ -142,5 +136,32 @@
     line-height: 1.4em ;
     border-radius: 15px;
   }
-}
+   .sobreMim,
+    .tituloSobreoProjeto,
+    .TituloDificuldades,
+    .desenvolvimento
+    .Notasfinais,
+    .ReferenciaTitulo
+    .agradecimento
+    {
+    margin-top: 100px;
+   height: auto;
+   margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  min-height: 150px;
+  background-color: #A0CCA0;
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+   border-radius: 15px;
+
+    }
 }
