@@ -204,41 +204,38 @@
   .ruraltexto,
   .texto1rural {
     width: 90%;
-    margin-left: 10px;  /* ajuste para alinhar à esquerda */
-    margin-right: auto;
-  }
-    .lavoura,
-  .trator{
-    height: auto;
-    margin-left: 10px;  /* mantém alinhado à esquerda */
+    margin-left: 10px;
     margin-right: auto;
   }
 
-  
-  .descricao4{
-     font-size: 16px;
+  .lavoura,
+  .trator {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .descricao2,
+  .descricao3,
+  .descricao4 {
+    font-size: 16px;
     margin-left: auto;
     margin-right: auto;
   }
-  .descricao3{
-      font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .descricao2{
-          font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  }
+
   .ruraltexto,
   .texto1rural {
     margin-top: 0;
   }
+
   .texto1Urbano {
     margin-bottom: 100px;
   }
-
+}
 
 @media (max-width: 600px) {
   .textoCampo,
@@ -250,38 +247,33 @@
     font-size: 18px;
     height: auto;
     padding: 10px;
-    margin-left: 10px;  /* mantém alinhado à esquerda */
+    margin-left: 10px;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .campoCidadeTitulo1{
+
+  .campoCidadeTitulo1 {
     font-size: 15px;
     height: auto;
     margin-top: 10px;
-
   }
-   .lavoura,
-  .trator{
-    margin-top:200px;
+
+  .lavoura,
+  .trator {
+    width: 90%;
     height: auto;
-    margin-left: 10px;  /* mantém alinhado à esquerda */
+    margin-top: 20px;
+    margin-left: auto;
     margin-right: auto;
+    display: block;
+    border-radius: 12px;
   }
 
-  
-  .descricao4{
-     font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .descricao3{
-      font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .descricao2{
-          font-size: 16px;
+  .descricao2,
+  .descricao3,
+  .descricao4 {
+    font-size: 16px;
     margin-left: auto;
     margin-right: auto;
   }
