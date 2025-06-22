@@ -77,81 +77,58 @@
   margin-top: -100px;
   margin-bottom: 50px;
 }
-.TituloAgriculturaBrasileira{
-  padding: 20px;
-  margin-right: auto;
-  margin-left: 100px;
-  width: 500px;
-  height: 100px;
-  font-size: 25px;
-  background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
-  border: 2px solid black;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-   border-radius: 15px;
-}
-.TextoAgriculturaBrasil{
-  margin-right: auto;
-  margin-left: 50px;
-  width: 600px;
-  height: 660px;
-  background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
-  border: 2px solid black;
-  margin-top: 50px;
-  margin-bottom: 300px;
-  padding:40px;
-  font-size: 30px;
-   border-radius: 15px;
-}
-.TituloAgriculturaParana{
-  padding:20px;
-  margin-right:100px ;
-  margin-left: auto;
-  width: 500px;
-  font-size: 25px;
-  height: 100px;
-  background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
-  border: 2px solid black;
-  margin-bottom: 50px;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center; 
-  margin-top:-1113px;
-   border-radius: 15px;
-}
-.TextoAgriculturaParanaense{
-  margin-right: 50px;
-  margin-left:auto ;
-  width: 600px;
-  height: 660px;
-  background-color: #A0CCA0;
-  color:rgb(0, 0, 0);
-  border: 2px solid black;
-  margin-bottom: 200px;
-  font-size: 30px;
-  margin-top: -550;
-  padding:40px;
-   border-radius: 15px;
+.agriculturaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
-.descricaolista{
+.TituloAgriculturaBrasileira,
+.TituloAgriculturaParana,
+.TextoAgriculturaBrasil,
+.TextoAgriculturaParanaense {
+  background-color: #A0CCA0;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
   font-size: 20px;
-  margin-top: 50px;
+  margin-bottom: 10px;
 }
+
+.TextoAgriculturaBrasil,
+.TextoAgriculturaParanaense {
+  text-align: left;
+  font-size: 18px;
+}
+
+.TextoAgriculturaBrasil ul,
+.TextoAgriculturaParanaense ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.TextoAgriculturaBrasil li,
+.TextoAgriculturaParanaense li {
+  margin-bottom: 5px;
+}
+
+.descricaolista {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
 /* ----------- RESPONSIVO ----------- */
 @media (max-width: 900px) {
   .AgriculturaTitulo,
   .Textoagricultura,
-  .TextoAgriculturaBrasil,
-  .TextoAgriculturaParanaense,
-  .TituloAgriculturaBrasileira,
-  .TituloAgriculturaParana,
   .descricaoalface,
   .descricaoimagem2 {
     width: 90%;
@@ -160,51 +137,153 @@
     height: auto;
     min-height: auto;
     font-size: 15px;
+    box-sizing: border-box;
   }
+
   .alface,
-  .Plantação{
-      width: 90%;
+  .Plantação {
+    width: 90%;
     margin: 20px auto;
     height: auto;
     min-height: auto;
-
+    display: block;
+    object-fit: cover;
   }
 
-
-  .descricao3,
-  .descricaolista {
+  .descricao3 {
     margin-top: 40px;
     text-align: center;
     font-size: 15px;
   }
-}
 
-@media (max-width: 480px) {
-  .AgriculturaTitulo,
-  .Textoagricultura,
-  .TextoAgriculturaBrasil,
-  .TextoAgriculturaParanaense,
+ .agriculturaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  .blocoAgricultura {
+    width: 90%;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+
   .TituloAgriculturaBrasileira,
   .TituloAgriculturaParana,
+  .TextoAgriculturaBrasil,
+  .TextoAgriculturaParanaense {
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    background-color: #A0CCA0;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .TextoAgriculturaBrasil,
+  .TextoAgriculturaParanaense {
+    text-align: left;
+  }
+
+  .TextoAgriculturaBrasil ul,
+  .TextoAgriculturaParanaense ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .descricaolista {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+@media (min-width: 810px) and (max-width: 1024px) {
+  .AgriculturaTitulo,
+  .Textoagricultura,
   .descricaoalface,
   .descricaoimagem2 {
     width: 90%;
-    padding: 10px;
-   font-size: 15px;
+    margin: 20px auto;
+    padding: 15px;
+    height: auto;
+    min-height: auto;
+    font-size: 15px;
+    box-sizing: border-box;
   }
 
-   .alface,
-  .Plantação{
-      width: 90%;
+  .alface,
+  .Plantação {
+    width: 70%;
     margin: 20px auto;
     height: auto;
     min-height: auto;
-
+    display: block;
+    object-fit: cover;
   }
-  .descricao3,
-  .descricaolista {
-    margin-top: 20px;
+
+  .descricao3 {
+    margin-top: 40px;
     text-align: center;
-   font-size: 15px;
+    font-size: 15px;
+  }
+
+    .agriculturaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    flex-direction: row !important;
+  }
+
+  .blocoAgricultura {
+    width: 45%;
+    min-width: 300px;
+    box-sizing: border-box;
+  }
+
+  .TituloAgriculturaBrasileira,
+  .TituloAgriculturaParana,
+  .TextoAgriculturaBrasil,
+  .TextoAgriculturaParanaense {
+    width: 100%;
+    background-color: #A0CCA0;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .TextoAgriculturaBrasil,
+  .TextoAgriculturaParanaense {
+    text-align: left;
+  }
+
+  .TextoAgriculturaBrasil ul,
+  .TextoAgriculturaParanaense ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .descricaolista {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
   }
 }

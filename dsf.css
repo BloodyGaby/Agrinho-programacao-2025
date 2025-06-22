@@ -32,7 +32,7 @@
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  border-radius: 15px;
+   border-radius: 15px;
 }
 
 .Listadsf {
@@ -50,7 +50,7 @@
   text-align: center;
   padding: 30px;
   box-sizing: border-box;
-  border-radius: 15px;
+   border-radius: 15px;
 }
 
 .solucoes {
@@ -68,7 +68,7 @@
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 15px;
+   border-radius: 15px;
 }
 
 .solucoeslista {
@@ -83,20 +83,9 @@
   background-color: #A0CCA0;
   padding: 30px;
   box-sizing: border-box;
-  border-radius: 15px;
+   border-radius: 15px;
 }
 
-.descricao {
-  width: 500px;
-  max-width: 95%;
-  height: 50px;
-  background-color: #A0CCA0;
-  border: 2px solid black;
-  font-size: 15px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  
-}
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
@@ -105,12 +94,13 @@
     height: auto;
     padding: 20px;
     border-radius: 15px;
+    box-sizing: border-box;
   }
   .topicodsf {
     height: auto;
     font-size: 16px;
     border-radius: 15px;
-    border-radius: 15px;
+    box-sizing: border-box;
   }
   .Listadsf {
     height: auto;
@@ -118,6 +108,7 @@
     flex-direction: column;
     padding: 15px;
     border-radius: 15px;
+    box-sizing: border-box;
   }
   .solucoes {
     width: 90%;
@@ -125,6 +116,7 @@
     font-size: 18px;
     padding: 15px;
     border-radius: 15px;
+    box-sizing: border-box;
   }
   .solucoeslista {
     width: 90%;
@@ -133,6 +125,7 @@
     flex-direction: column;
     font-size: 18px;
     border-radius: 15px;
+    box-sizing: border-box;
   }
   .descricao {
     width: 90%;
@@ -140,19 +133,19 @@
     border-radius: 15px;
   }
 }
-
-@media (max-width: 900px){
-   .texto7 {
+@media (max-width:1024px){
+ .texto7 {
     font-size: 24px;
     height: auto;
     padding: 20px;
     border-radius: 15px;
+    box-sizing: border-box;
   }
   .topicodsf {
     height: auto;
     font-size: 16px;
     border-radius: 15px;
-    border-radius: 15px;
+    box-sizing: border-box;
   }
   .Listadsf {
     height: auto;
@@ -160,6 +153,7 @@
     flex-direction: column;
     padding: 15px;
     border-radius: 15px;
+    box-sizing: border-box;
   }
   .solucoes {
     width: 90%;
@@ -167,6 +161,7 @@
     font-size: 18px;
     padding: 15px;
     border-radius: 15px;
+    box-sizing: border-box;
   }
   .solucoeslista {
     width: 90%;
@@ -175,10 +170,13 @@
     flex-direction: column;
     font-size: 18px;
     border-radius: 15px;
+    box-sizing: border-box;
+     padding-bottom: 110px;
   }
   .descricao {
     width: 90%;
     height: auto;
     border-radius: 15px;
   }
+  
 }

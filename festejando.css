@@ -120,3 +120,51 @@
     height: auto;
   }
 }
+
+/* --- CELULAR (responsivo real) --- */
+@media (max-width: 600px) {
+ .quadrado1 {
+    font-size: 18px;
+    padding: 15px;
+   margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+  }
+
+  .descricao,
+  .descricao3 {
+    font-size: 14px;
+    margin: 20px auto;
+  }
+
+  .patos,
+  .Alface {
+    margin: 20px auto;
+    width: 90%;
+    height: 600px;
+  }
+}
+
+@media(max-width:1024px){
+  .quadrado1 {
+    font-size: 18px;
+    padding: 15px;
+   margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+  }
+
+  .descricao,
+  .descricao3 {
+    font-size: 14px;
+    margin: 20px auto;
+  }
+
+  .patos,
+  .Alface {
+    margin: 20px auto;
+    width: 90%;
+    height: 600px;
+  }
+
+}
