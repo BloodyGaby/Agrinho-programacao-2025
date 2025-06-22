@@ -1,3 +1,5 @@
+/* ---------- ESTILOS ORIGINAIS ---------- */
+
 .banner1 {
   width: 100%;
 }
@@ -110,203 +112,194 @@
   border-radius: 15px;
 }
 
-.duplaContainer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  flex-wrap: nowrap;
-  margin: 80px auto;
-  max-width: 1200px;
-  box-sizing: border-box;
-}
-
-.bloco {
-  width: 500px;
-  max-width: 90%;
-}
-
-.urbanoTexto,
-.ruraltexto {
-  background-color: #A0CCA0;
-  border: 2px solid black;
-  border-radius: 15px;
+.urbanoTexto {
   padding: 20px;
+  margin-right: auto;
+  margin-left: 50px;
+  width: 500px;
+  max-width: 95%;
+  height: 100px;
   font-size: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.texto1Urbano,
-.texto1rural {
   background-color: #A0CCA0;
+  color: rgb(0, 0, 0);
   border: 2px solid black;
-  border-radius: 15px;
-  padding: 30px;
-  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
+.texto1Urbano {
+  margin-right: auto;
+  margin-left: 50px;
+  width: 500px;
+  max-width: 95%;
+  min-height: 500px;
+  background-color: #A0CCA0;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
 
-/* ----------- RESPONSIVO CELULAR (ATÉ 900px) ----------- */
+.ruraltexto {
+  padding: 20px;
+  margin-right: 50px;
+  margin-left: auto;
+  width: 500px;
+  max-width: 95%;
+  font-size: 30px;
+  height: 100px;
+  background-color: #A0CCA0;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -950px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.texto1rural {
+  margin-right: 50px;
+  margin-left: auto;
+  width: 500px;
+  max-width: 95%;
+  min-height: 500px;
+  background-color: #A0CCA0;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -5px; 
+  display: flex;
+  box-sizing: border-box;
+  padding:30px;
+  border-radius: 15px;
+}
+
 @media (max-width: 900px) {
- .campoCidadeTitulo1 {
+  .campoCidadeTitulo1 {
+    width: 90%;
+    height: auto;
+    margin: 30px auto 20px auto;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #A0CCA0;
+    border: 2px solid black;
+    border-radius: 15px;
+    line-height: normal;
+  }
+
+  .textoCampo {
     width: 90%;
     margin: 20px auto;
     padding: 20px;
-    font-size: 15px;
-    text-align: center;
-    background-color: #a9d4a2;
-    border: 2px solid black;
-    border-radius: 12px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 18px;
     height: auto;
+    text-align: justify;
+    border-radius: 15px;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
-  .campoCidadeTitulo1 h1,
-  .campoCidadeTitulo1 strong {
-    font-size: 16px !important;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
+  .lavoura,
+  .trator {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 12px;
+    object-fit: cover;
   }
+
+  .descricao3,
+  .descricao2,
+  .descricao4 {
+    width: 90%;
+    margin: 10px auto 30px auto;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ajudaTexto {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    height: auto;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+ .duplaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
   }
 
   .urbanoTexto,
   .ruraltexto {
     width: 90%;
-    margin: 10px auto;
-    font-size: 22px;
-    text-align: center;
-    background-color: #a9d4a2;
-    border: 2px solid black;
-    border-radius: 12px;
-    padding: 10px;
-    box-sizing: border-box;
+    max-width: 320px;
+    font-size: 20px;
+    padding: 15px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   .texto1Urbano,
-  .texto1rural,
-  .textoCampo,
-  .ajudaTexto {
+  .texto1rural {
     width: 90%;
-    margin: 10px auto;
+    max-width: 320px;
     font-size: 16px;
     padding: 15px;
-    text-align: left;
-    background-color: #a9d4a2;
-    border: 2px solid black;
-    border-radius: 12px;
-    box-sizing: border-box;
-  }
-
-  .lavoura,
-  .trator {
-    width: 90%;
     height: auto;
-    margin: 20px auto;
-    display: block;
-    border-radius: 12px;
-    object-fit: cover;
-    border: 2px solid black;
+    margin: 0 auto;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
   }
-
-  .descricao2,
-  .descricao3,
-  .descricao4 {
-    width: 90%;
-    margin: 10px auto 30px auto;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .duplaContainer {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-
-/* ----------- RESPONSIVO TABLET (901px até 1024px) ----------- */
-@media (min-width: 901px) and (max-width: 1024px) {
- 
-  .ajudaTexto {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    background-color: #a9d4a2;
-    border: 2px solid black;
-    border-radius: 12px;
-    box-sizing: border-box;
-  }
-.campoCidadeTitulo1 {
-  width: 90%;
-  margin: 20px auto;
-  padding: 20px;
-  font-size: 15px;
-  text-align: center;
-  background-color: #a9d4a2;
-  border: 2px solid black;
-  border-radius: 12px;
-  box-sizing: border-box;
 }
 
-
-  .ajudaTexto h2 {
-    font-size: 26px;
-  }
-
-  .duplaContainer {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    width: 100%;
-  }
-
-  .bloco {
+@media (min-width: 901px) and (max-width: 1024px) {
+  .urbanoTexto,
+  .texto1Urbano,
+  .ruraltexto,
+  .texto1rural {
     width: 45%;
     min-width: 300px;
-    box-sizing: border-box;
+    max-width: 90%;
+  }
+
+  .texto1Urbano,
+  .texto1rural {
+    min-height: 500px;
   }
 
   .urbanoTexto,
-  .ruraltexto,
-  .texto1Urbano,
-  .texto1rural {
-    width: 100%;
-    background-color: #a9d4a2;
-    border: 2px solid black;
-    border-radius: 12px;
-    padding: 20px;
-    box-sizing: border-box;
-    font-size: 20px;
-    text-align: justify;
-  }
-
-  .lavoura,
-  .trator {
-    width: 60%;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-    border-radius: 12px;
-    object-fit: cover;
-    border: 2px solid black;
-  }
-
-  .descricao2,
-  .descricao3,
-  .descricao4 {
-    font-size: 16px;
-    text-align: center;
-    margin: 10px auto;
-    width: 90%;
+  .ruraltexto {
+    margin: 40px auto 20px auto;
   }
 }
